@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AICRM 架構</title>
+    <style>
+      :root { --bg:#050816; --panel:#0f162b; --line:#1f2a44; --text:#f4f5fb; --muted:#9fb0c3; --accent:#7c3aed; }
+      body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:linear-gradient(180deg,#050816 0%,#0a1020 100%); color:var(--text); }
+      .wrap { max-width:960px; margin:0 auto; padding:32px 20px 60px; }
+      h1 { margin-bottom:10px; }
+      h2 { margin:28px 0 10px; color:#c4b5fd; }
+      p { color:var(--muted); line-height:1.7; }
+      .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:16px 20px; margin-bottom:16px; }
+      ul { color:var(--muted); line-height:1.7; }
+      code { background:rgba(255,255,255,0.06); padding:2px 4px; border-radius:4px; font-size:90%; }
+      pre { background:#04060f; padding:14px; border-radius:12px; overflow:auto; }
+      a { color:#93c5fd; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>AICRM 智能客服架構</h1>
+      <p>此頁展示我們在 OpenClaw 上實作的高效率 AI Agent：具備 <strong>記憶蒸餾</strong>、<strong>技能凍結</strong> 與 <strong>模型降級策略</strong>，能在降低 40% Token 成本的前提下提供穩定客服體驗。</p>
+
+      <div class="card">
+        <h2>記憶蒸餾 Memory Distillation</h2>
+        <ul>
+          <li>長對話 → &lt;50 Token JSON 摘要</li>
+          <li>蒐集 user_goals / preferences / constraints / patterns</li>
+          <li>範例：<code>{"user_goals":"Daily TW market report",...}</code></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>技能凍結 Skill Freezing</h2>
+        <ul>
+          <li>重複任務自動變成技能模組</li>
+          <li>內建：股市分析、Prompt 生成、API 呼叫、資料格式化</li>
+          <li>技能先行 → 盡量不喚醒 LLM</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>模型降級策略 Model Downgrade</h2>
+        <p>依照複雜度自動選擇模型：</p>
+        <pre>
+if task in [chat, summarize, classify]: model = gpt-4o-mini
+elif task in [code, reasoning]:       model = gpt-4o
+else:                                   model = gpt-4.1
+        </pre>
+      </div>
+
+      <div class="card">
+        <h2>Agent Pipeline</h2>
+        <ol>
+          <li>User Input → Distilled Memory</li>
+          <li>Skill Router → 呼叫凍結技能</li>
+          <li>若需 LLM → Model Router 選擇最省成本模型</li>
+          <li>輸出後進行 Reflection，持續優化技能</li>
+        </ol>
+      </div>
+
+      <p>完整原始碼：<a href="https://github.com/mavicair2tw/aiagent" target="_blank" rel="noopener">github.com/mavicair2tw/aiagent</a></p>
+    </div>
+  </body>
+</html>
