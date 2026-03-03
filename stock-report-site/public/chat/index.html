@@ -355,7 +355,25 @@
 
       async function enrichGoogle(q){
         const forum = await forumQuickResults(q);
+        // If Forum has matches, return Forum content only (no Google link/summary noise).
         if (forum) return forum;
+
+        const extra = await fetchSearchSummary(q);
+        const want10 = /(^|\s)(10|前\s*10|top\s*10)(\s|$)/i.test(String(q));
+        const topN = want10 ? 10 : 5;
+
+        if (extra?.items?.length) {
+          const lines = extra.items.slice(0, topN).map((x, i) => {
+            const title = typeof x === 'string' ? x : String(x?.title || '').trim();
+            const url = typeof x === 'object' ? String(x?.url || '').trim() : '';
+            return `${i+1}. ${url ? `[${title}](${url})` : title}`;
+          });
+          return `${lines.join('\n')}`;
+        }
+        if (extra?.summary) {
+          return `Google 搜尋摘要：${extra.summary}`;
+        }
+
         const g = googleReply(q);
         return `Google 搜尋連結：${g.link}`;
       }
