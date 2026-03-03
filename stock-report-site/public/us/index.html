@@ -63,7 +63,8 @@
       function normalizeNumber(val){
         if (typeof val === 'number') return val;
         if (typeof val === 'string'){
-          const num = Number(val.replace(/,/g,''));
+          const cleaned = val.replace(/,/g,'').replace(/%/g,'').trim();
+          const num = Number(cleaned);
           if (!Number.isNaN(num)) return num;
         }
         return null;
