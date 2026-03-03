@@ -92,7 +92,7 @@
 
         document.getElementById('summary').innerHTML =
           `【美股摘要】整體氣氛：<b>${tone}</b>（平均漲幅 ${avg.toFixed(2)}% ，上漲 ${up} 檔 / 下跌 ${down} 檔）。<br>`+
-          `強勢：<span class="up">${topUp.label} (${topUp.changePercent}%)</span>；弱勢：<span class="down">${topDown.label} (${topDown.changePercent}%)</span>。<br>`+
+          `強勢：<span class="up">${topUp.label} (${fmts(topUp.changePercent,'%')})</span>；弱勢：<span class="down">${topDown.label} (${fmts(topDown.changePercent,'%')})</span>。<br>`+
           `【投資建議】${action}<br><span class="muted">※ 以上為程式自動摘要，僅供參考，非投資建議。</span>`;
       }
 
