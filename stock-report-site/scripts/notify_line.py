@@ -15,7 +15,8 @@ from urllib.error import HTTPError, URLError
 BASE_DIR = Path(__file__).resolve().parents[1]
 ENV_FILE = BASE_DIR / ".env"
 LINE_TOKEN_URL = "https://api.line.me/v2/oauth/accessToken"
-LINE_BROADCAST_URL = "https://api.line.me/v2/bot/message/broadcast"
+LINE_PUSH_URL = "https://api.line.me/v2/bot/message/push"
+LINE_SUBSCRIBERS_URL = "https://line-webhook.googselect.workers.dev/subscribers"
 
 
 def load_env() -> None:
@@ -46,7 +47,7 @@ def get_access_token(channel_id: str, channel_secret: str) -> str:
     return token
 
 
-def broadcast_message(token: str, text: str, image_url: str | None) -> None:
+def push_message(token: str, user_id: str, text: str, image_url: str | None) -> None:
     messages = []
     if text:
         messages.append({"type": "text", "text": text})
@@ -59,9 +60,10 @@ def broadcast_message(token: str, text: str, image_url: str | None) -> None:
     if not messages:
         raise RuntimeError("Nothing to send to LINE")
     payload = json.dumps({
+        "to": user_id,
         "messages": messages
     }).encode("utf-8")
-    req = Request(LINE_BROADCAST_URL, data=payload, headers={
+    req = Request(LINE_PUSH_URL, data=payload, headers={
         "content-type": "application/json",
         "authorization": f"Bearer {token}"
     })
@@ -70,10 +72,24 @@ def broadcast_message(token: str, text: str, image_url: str | None) -> None:
             resp.read()
     except HTTPError as exc:
         detail = exc.read().decode()
-        raise RuntimeError(f"LINE broadcast failed: {exc.code} {detail}")
+        raise RuntimeError(f"LINE push failed: {exc.code} {detail}")
     except URLError as exc:
-        raise RuntimeError(f"LINE broadcast connection error: {exc}")
+        raise RuntimeError(f"LINE push connection error: {exc}")
 
+
+
+def get_subscriber_ids() -> list[str]:
+    headers = {
+        "accept": "application/json",
+        "user-agent": "line-bot/1.0"
+    }
+    req = Request(LINE_SUBSCRIBERS_URL, headers=headers)
+    with urlopen(req, timeout=10) as resp:
+        data = json.loads(resp.read().decode())
+    ids = data.get("ids", [])
+    if not isinstance(ids, list):
+        return []
+    return [item for item in ids if isinstance(item, str)]
 
 
 def main(argv: list[str]) -> None:
@@ -85,12 +101,28 @@ def main(argv: list[str]) -> None:
     load_env()
     channel_id = os.environ.get("LINE_CHANNEL_ID")
     channel_secret = os.environ.get("LINE_CHANNEL_SECRET")
+    fallback_user = os.environ.get("LINE_USER_ID")
     if not channel_id or not channel_secret:
         raise SystemExit("Missing LINE_CHANNEL_ID / LINE_CHANNEL_SECRET")
 
     token = get_access_token(channel_id, channel_secret)
-    broadcast_message(token, args.text, args.image_url)
-    print("Broadcast LINE push successfully")
+    targets: list[str] = []
+    if fallback_user:
+        targets.append(fallback_user)
+    try:
+        subscribers = get_subscriber_ids()
+        for subscriber in subscribers:
+            if subscriber not in targets:
+                targets.append(subscriber)
+    except Exception as exc:
+        print(f"Warning: failed to fetch LINE subscribers: {exc}")
+
+    if not targets:
+        raise SystemExit("No LINE recipients available")
+
+    for target in targets:
+        push_message(token, target, args.text, args.image_url)
+    print(f"Sent LINE push to {len(targets)} recipient(s)")
 
 
 if __name__ == "__main__":

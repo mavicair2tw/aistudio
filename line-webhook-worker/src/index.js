@@ -18,7 +18,7 @@ async function getAccessToken(env) {
 }
 
 async function replyToEvent(event, accessToken) {
-  if (!event?.replyToken) return;
+  if (event?.type !== 'follow' || !event?.replyToken) return;
   const message = {
     replyToken: event.replyToken,
     messages: [
@@ -80,6 +80,33 @@ async function handleChartStore(request) {
   return cached;
 }
 
+const SUBSCRIBER_KEY = 'line-subscribers';
+
+async function loadSubscribers(env) {
+  const raw = await env.SUBSCRIBERS.get(SUBSCRIBER_KEY);
+  if (!raw) return [];
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (err) {
+    console.error('Failed to parse subscriber list', err);
+    return [];
+  }
+}
+
+async function saveSubscribers(env, ids) {
+  await env.SUBSCRIBERS.put(SUBSCRIBER_KEY, JSON.stringify(ids));
+}
+
+async function addSubscriber(env, userId) {
+  if (!userId) return;
+  const ids = await loadSubscribers(env);
+  if (!ids.includes(userId)) {
+    ids.push(userId);
+    await saveSubscribers(env, ids);
+  }
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -88,6 +115,23 @@ export default {
     }
     if (url.pathname === '/chart-upload') {
       return handleChartUpload(request);
+    }
+    if (url.pathname === '/subscribers') {
+      if (request.method === 'GET') {
+        const ids = await loadSubscribers(env);
+        return new Response(JSON.stringify({ ids }), {
+          status: 200,
+          headers: { 'content-type': 'application/json' }
+        });
+      }
+      if (request.method === 'DELETE') {
+        await saveSubscribers(env, []);
+        return new Response(JSON.stringify({ ok: true }), {
+          status: 200,
+          headers: { 'content-type': 'application/json' }
+        });
+      }
+      return new Response('method not allowed', { status: 405 });
     }
 
     const { method } = request;
@@ -110,7 +154,12 @@ export default {
 
     try {
       const accessToken = await getAccessToken(env);
-      await Promise.all((body.events || []).map(evt => replyToEvent(evt, accessToken)));
+      await Promise.all((body.events || []).map(async evt => {
+        if (evt?.source?.userId) {
+          await addSubscriber(env, evt.source.userId);
+        }
+        await replyToEvent(evt, accessToken);
+      }));
     } catch (err) {
       console.error('LINE reply failed', err);
     }
