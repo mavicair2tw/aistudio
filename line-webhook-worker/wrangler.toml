@@ -5,3 +5,7 @@ compatibility_date = "2026-03-03"
 [[kv_namespaces]]
 binding = "SUBSCRIBERS"
 id = "3bf2e523057d4887afc110f68ab356a3"
+
+[[kv_namespaces]]
+binding = "LINE_COMMANDS"
+id = "f3fd2fa8ae1943ec98883ca094b708b9"

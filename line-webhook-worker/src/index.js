@@ -1,3 +1,7 @@
+const SUBSCRIBER_KEY = 'line-subscribers';
+const COMMAND_QUEUE_KEY = 'line-command-queue';
+const COMMAND_PREFIX = '#oc';
+
 async function getAccessToken(env) {
   const params = new URLSearchParams({
     grant_type: 'client_credentials',
@@ -17,14 +21,14 @@ async function getAccessToken(env) {
   return data.access_token;
 }
 
-async function replyToEvent(event, accessToken) {
-  if (event?.type !== 'follow' || !event?.replyToken) return;
-  const message = {
+async function replyText(event, accessToken, text) {
+  if (!event?.replyToken) return;
+  const payload = {
     replyToken: event.replyToken,
     messages: [
       {
         type: 'text',
-        text: '收到！LINE 推播已啟用，收盤後會自動通知你。'
+        text
       }
     ]
   };
@@ -34,7 +38,7 @@ async function replyToEvent(event, accessToken) {
       'content-type': 'application/json',
       authorization: `Bearer ${accessToken}`
     },
-    body: JSON.stringify(message)
+    body: JSON.stringify(payload)
   });
   if (!res.ok) {
     const detail = await res.text();
@@ -80,8 +84,6 @@ async function handleChartStore(request) {
   return cached;
 }
 
-const SUBSCRIBER_KEY = 'line-subscribers';
-
 async function loadSubscribers(env) {
   const raw = await env.SUBSCRIBERS.get(SUBSCRIBER_KEY);
   if (!raw) return [];
@@ -105,6 +107,56 @@ async function addSubscriber(env, userId) {
     ids.push(userId);
     await saveSubscribers(env, ids);
   }
+}
+
+async function loadCommandQueue(env) {
+  const raw = await env.LINE_COMMANDS.get(COMMAND_QUEUE_KEY);
+  if (!raw) return [];
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (err) {
+    console.error('Failed to parse command queue', err);
+    return [];
+  }
+}
+
+async function saveCommandQueue(env, queue) {
+  await env.LINE_COMMANDS.put(COMMAND_QUEUE_KEY, JSON.stringify(queue));
+}
+
+async function enqueueCommand(env, command) {
+  const queue = await loadCommandQueue(env);
+  queue.push(command);
+  await saveCommandQueue(env, queue.slice(-200));
+}
+
+async function removeCommands(env, ids) {
+  if (!ids?.length) return;
+  const queue = await loadCommandQueue(env);
+  const filtered = queue.filter(cmd => !ids.includes(cmd.id));
+  await saveCommandQueue(env, filtered);
+}
+
+function normalizeCommand(text) {
+  if (!text) return null;
+  const trimmed = text.trim();
+  if (!trimmed.toLowerCase().startsWith(COMMAND_PREFIX)) return null;
+  const payload = trimmed.slice(COMMAND_PREFIX.length).trim();
+  if (!payload) return null;
+  return payload.replace(/\s+/g, ' ').toUpperCase();
+}
+
+function unauthorized() {
+  return new Response('unauthorized', { status: 401, headers: { 'content-type': 'text/plain' } });
+}
+
+function isAuthorized(request, env) {
+  const header = request.headers.get('authorization');
+  if (!header) return false;
+  const [scheme, token] = header.split(' ');
+  if (scheme !== 'Bearer') return false;
+  return token === env.COMMAND_API_TOKEN;
 }
 
 export default {
@@ -133,9 +185,32 @@ export default {
       }
       return new Response('method not allowed', { status: 405 });
     }
+    if (url.pathname === '/commands') {
+      if (!isAuthorized(request, env)) return unauthorized();
+      const commands = await loadCommandQueue(env);
+      return new Response(JSON.stringify({ commands }), {
+        status: 200,
+        headers: { 'content-type': 'application/json' }
+      });
+    }
+    if (url.pathname === '/commands/ack') {
+      if (!isAuthorized(request, env)) return unauthorized();
+      if (request.method !== 'POST') return badRequest('POST only');
+      let payload = null;
+      try {
+        payload = await request.json();
+      } catch (err) {
+        return badRequest('invalid json');
+      }
+      const ids = Array.isArray(payload?.ids) ? payload.ids : [];
+      await removeCommands(env, ids);
+      return new Response(JSON.stringify({ ok: true }), {
+        status: 200,
+        headers: { 'content-type': 'application/json' }
+      });
+    }
 
-    const { method } = request;
-    if (method !== 'POST') {
+    if (request.method !== 'POST') {
       return new Response('LINE webhook ready', { status: 200 });
     }
 
@@ -154,12 +229,28 @@ export default {
 
     try {
       const accessToken = await getAccessToken(env);
-      await Promise.all((body.events || []).map(async evt => {
+      for (const evt of body.events || []) {
         if (evt?.source?.userId) {
           await addSubscriber(env, evt.source.userId);
         }
-        await replyToEvent(evt, accessToken);
-      }));
+        if (evt?.type === 'follow') {
+          await replyText(evt, accessToken, '收到！LINE 推播已啟用，收盤後會自動通知你。');
+          continue;
+        }
+        if (evt?.type === 'message' && evt.message?.type === 'text') {
+          const normalized = normalizeCommand(evt.message.text);
+          if (normalized) {
+            await enqueueCommand(env, {
+              id: crypto.randomUUID(),
+              userId: evt.source?.userId || '',
+              command: normalized,
+              rawText: evt.message.text,
+              createdAt: new Date().toISOString()
+            });
+            await replyText(evt, accessToken, `指令已排程：${normalized}`);
+          }
+        }
+      }
     } catch (err) {
       console.error('LINE reply failed', err);
     }
