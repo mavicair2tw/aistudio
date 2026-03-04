@@ -7,6 +7,7 @@ import argparse
 import json
 import os
 import smtplib
+import subprocess
 from dataclasses import dataclass
 from datetime import datetime
 from email.mime.multipart import MIMEMultipart
@@ -219,12 +220,25 @@ def send_email(cfg: EmailConfig, subject: str, text: str, html: str) -> str:
     return cfg.recipient
 
 
+def push_line_notification(summary: str, suggestion: str, rows: list[dict]) -> None:
+    if not LINE_SCRIPT.exists():
+        return
+    table = build_line_table(rows)
+    message = f"{REPORT_TITLE}\n{summary}\n{suggestion}\n\n{table}"
+    cmd = ["python3", str(LINE_SCRIPT), message]
+    try:
+        subprocess.run(cmd, check=True)
+    except subprocess.CalledProcessError as exc:
+        print(f"LINE push failed: {exc}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Send the US market daily report email.")
     parser.add_argument("--to", help="Override recipient email")
     parser.add_argument("--gmail-user", help="Override Gmail user")
     parser.add_argument("--gmail-app-password", help="Override Gmail app password")
     parser.add_argument("--dry-run", action="store_true", help="Print email content instead of sending")
+    parser.add_argument("--no-line", action="store_true", help="Skip LINE notification")
     return parser.parse_args()
 
 
@@ -245,11 +259,15 @@ def main() -> None:
     if args.dry_run:
         print(subject)
         print(text_body)
+        if not args.no_line:
+            push_line_notification(summary, suggestion, rows)
         return
 
     cfg = resolve_email_config(args)
     recipient = send_email(cfg, subject, text_body, html_body)
     print(f"Sent US report to {recipient}")
+    if not args.no_line:
+        push_line_notification(summary, suggestion, rows)
 
 
 if __name__ == "__main__":
