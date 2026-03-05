@@ -104,6 +104,11 @@ def build_report(now: datetime):
     return {
         "updatedAt": now.isoformat(),
         "timezone": "Asia/Taipei",
+        "source": {
+            "name": "Yahoo Finance",
+            "provider": "yfinance",
+            "url": "https://finance.yahoo.com/"
+        },
         "market": {
             "name": "TWSE",
             "open": "09:00",

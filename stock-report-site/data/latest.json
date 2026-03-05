@@ -1,6 +1,11 @@
 {
-  "updatedAt": "2026-03-03T13:01:35.496088+08:00",
+  "updatedAt": "2026-03-05T12:38:09.742044+08:00",
   "timezone": "Asia/Taipei",
+  "source": {
+    "name": "Yahoo Finance",
+    "provider": "yfinance",
+    "url": "https://finance.yahoo.com/"
+  },
   "market": {
     "name": "TWSE",
     "open": "09:00",
@@ -12,70 +17,66 @@
       "label": "加權指數",
       "symbol": "^TWII",
       "type": "Index",
-      "price": 34373.12,
-      "change": -721.97,
-      "changePercent": -2.06,
+      "price": 33489.52,
+      "change": 660.64,
+      "changePercent": 2.01,
       "currency": "TWD",
       "trend": [
         {
           "time": "09:00",
-          "close": 35150.57
+          "close": 34314.07
         },
         {
           "time": "09:15",
-          "close": 35062.56
+          "close": 34127.07
         },
         {
           "time": "09:30",
-          "close": 34936.53
+          "close": 34035.63
         },
         {
           "time": "09:45",
-          "close": 34700.7
+          "close": 33756.18
         },
         {
           "time": "10:00",
-          "close": 34675.86
+          "close": 33711.72
         },
         {
           "time": "10:15",
-          "close": 34547.55
+          "close": 33525.54
         },
         {
           "time": "10:30",
-          "close": 34510.84
+          "close": 33724.84
         },
         {
           "time": "10:45",
-          "close": 34577.36
+          "close": 33718.72
         },
         {
           "time": "11:00",
-          "close": 34520.64
+          "close": 33761.29
         },
         {
           "time": "11:15",
-          "close": 34477.1
+          "close": 33711.7
         },
         {
           "time": "11:30",
-          "close": 34536.95
+          "close": 33587.94
         },
         {
           "time": "11:45",
-          "close": 34545.26
+          "close": 33536.24
         },
         {
           "time": "12:00",
-          "close": 34424.74
+          "close": 33500.78
         },
         {
           "time": "12:15",
-          "close": 34444.5
-        },
-        {
-          "time": "12:30",
-          "close": 34373.12
+          "close": 33489.52
         }
       ]
     },
@@ -83,70 +84,66 @@
       "label": "台積電",
       "symbol": "2330.TW",
       "type": "Stock",
-      "price": 1945.0,
-      "change": -30.0,
-      "changePercent": -1.52,
+      "price": 1895.0,
+      "change": 30.0,
+      "changePercent": 1.61,
       "currency": "TWD",
       "trend": [
         {
           "time": "09:00",
-          "close": 1975.0
+          "close": 1960.0
         },
         {
           "time": "09:15",
-          "close": 1970.0
+          "close": 1950.0
         },
         {
           "time": "09:30",
-          "close": 1970.0
+          "close": 1945.0
         },
         {
           "time": "09:45",
-          "close": 1960.0
+          "close": 1925.0
         },
         {
           "time": "10:00",
-          "close": 1960.0
+          "close": 1920.0
         },
         {
           "time": "10:15",
-          "close": 1955.0
+          "close": 1905.0
         },
         {
           "time": "10:30",
-          "close": 1950.0
+          "close": 1920.0
         },
         {
           "time": "10:45",
-          "close": 1950.0
+          "close": 1915.0
         },
         {
           "time": "11:00",
-          "close": 1945.0
+          "close": 1920.0
         },
         {
           "time": "11:15",
-          "close": 1945.0
+          "close": 1910.0
         },
         {
           "time": "11:30",
-          "close": 1950.0
+          "close": 1900.0
         },
         {
           "time": "11:45",
-          "close": 1945.0
+          "close": 1900.0
         },
         {
           "time": "12:00",
-          "close": 1945.0
+          "close": 1895.0
         },
         {
           "time": "12:15",
-          "close": 1945.0
-        },
-        {
-          "time": "12:30",
-          "close": 1945.0
+          "close": 1895.0
         }
       ]
     },
@@ -154,70 +151,66 @@
       "label": "富邦科技",
       "symbol": "0052.TW",
       "type": "ETF",
-      "price": 46.87,
-      "change": -1.03,
-      "changePercent": -2.15,
+      "price": 45.7,
+      "change": -1.11,
+      "changePercent": -2.37,
       "currency": "TWD",
       "trend": [
         {
           "time": "09:00",
-          "close": 47.81
+          "close": 46.9
         },
         {
           "time": "09:15",
-          "close": 47.74
+          "close": 46.68
         },
         {
           "time": "09:30",
-          "close": 47.6
+          "close": 46.51
         },
         {
           "time": "09:45",
-          "close": 47.34
+          "close": 46.1
         },
         {
           "time": "10:00",
-          "close": 47.28
+          "close": 46.1
         },
         {
           "time": "10:15",
-          "close": 47.1
+          "close": 45.85
         },
         {
           "time": "10:30",
-          "close": 47.07
+          "close": 46.13
         },
         {
           "time": "10:45",
-          "close": 47.15
+          "close": 46.12
         },
         {
           "time": "11:00",
-          "close": 47.0
+          "close": 46.11
         },
         {
           "time": "11:15",
-          "close": 46.96
+          "close": 46.03
         },
         {
           "time": "11:30",
-          "close": 47.03
+          "close": 45.78
         },
         {
           "time": "11:45",
-          "close": 46.97
+          "close": 45.75
         },
         {
           "time": "12:00",
-          "close": 46.91
+          "close": 45.69
         },
         {
           "time": "12:15",
-          "close": 46.91
-        },
-        {
-          "time": "12:30",
-          "close": 46.87
+          "close": 45.7
         }
       ]
     },
@@ -225,70 +218,66 @@
       "label": "元大台灣50",
       "symbol": "0050.TW",
       "type": "ETF",
-      "price": 78.8,
-      "change": -1.55,
-      "changePercent": -1.93,
+      "price": 76.8,
+      "change": -1.95,
+      "changePercent": -2.48,
       "currency": "TWD",
       "trend": [
         {
           "time": "09:00",
-          "close": 80.15
-        },
-        {
-          "time": "09:15",
-          "close": 80.0
-        },
-        {
-          "time": "09:30",
-          "close": 79.95
-        },
-        {
-          "time": "09:45",
-          "close": 79.6
-        },
-        {
-          "time": "10:00",
-          "close": 79.5
-        },
-        {
-          "time": "10:15",
-          "close": 79.25
-        },
-        {
-          "time": "10:30",
-          "close": 79.2
-        },
-        {
-          "time": "10:45",
-          "close": 79.3
-        },
-        {
-          "time": "11:00",
-          "close": 79.1
-        },
-        {
-          "time": "11:15",
-          "close": 79.05
-        },
-        {
-          "time": "11:30",
-          "close": 79.1
-        },
-        {
-          "time": "11:45",
-          "close": 79.05
-        },
-        {
-          "time": "12:00",
-          "close": 78.95
-        },
-        {
-          "time": "12:15",
           "close": 78.85
         },
         {
-          "time": "12:30",
-          "close": 78.8
+          "time": "09:15",
+          "close": 78.45
+        },
+        {
+          "time": "09:30",
+          "close": 78.15
+        },
+        {
+          "time": "09:45",
+          "close": 77.5
+        },
+        {
+          "time": "10:00",
+          "close": 77.5
+        },
+        {
+          "time": "10:15",
+          "close": 77.05
+        },
+        {
+          "time": "10:30",
+          "close": 77.6
+        },
+        {
+          "time": "10:45",
+          "close": 77.5
+        },
+        {
+          "time": "11:00",
+          "close": 77.45
+        },
+        {
+          "time": "11:15",
+          "close": 77.3
+        },
+        {
+          "time": "11:30",
+          "close": 76.95
+        },
+        {
+          "time": "11:45",
+          "close": 76.95
+        },
+        {
+          "time": "12:00",
+          "close": 76.9
+        },
+        {
+          "time": "12:15",
+          "close": 76.8
         }
       ]
     },
@@ -296,70 +285,66 @@
       "label": "凱基台灣TOP50",
       "symbol": "009816.TW",
       "type": "ETF",
-      "price": 11.07,
-      "change": -0.25,
-      "changePercent": -2.21,
+      "price": 10.77,
+      "change": 0.17,
+      "changePercent": 1.6,
       "currency": "TWD",
       "trend": [
         {
           "time": "09:00",
-          "close": 11.32
+          "close": 11.03
         },
         {
           "time": "09:15",
-          "close": 11.29
+          "close": 10.98
         },
         {
           "time": "09:30",
-          "close": 11.24
+          "close": 10.96
         },
         {
           "time": "09:45",
-          "close": 11.18
+          "close": 10.86
         },
         {
           "time": "10:00",
-          "close": 11.17
+          "close": 10.85
         },
         {
           "time": "10:15",
-          "close": 11.13
+          "close": 10.78
         },
         {
           "time": "10:30",
-          "close": 11.13
+          "close": 10.85
         },
         {
           "time": "10:45",
-          "close": 11.15
+          "close": 10.85
         },
         {
           "time": "11:00",
-          "close": 11.13
+          "close": 10.85
         },
         {
           "time": "11:15",
-          "close": 11.12
+          "close": 10.83
         },
         {
           "time": "11:30",
-          "close": 11.14
+          "close": 10.78
         },
         {
           "time": "11:45",
-          "close": 11.12
+          "close": 10.79
         },
         {
           "time": "12:00",
-          "close": 11.1
+          "close": 10.78
         },
         {
           "time": "12:15",
-          "close": 11.08
-        },
-        {
-          "time": "12:30",
-          "close": 11.07
+          "close": 10.77
         }
       ]
     },
@@ -367,70 +352,66 @@
       "label": "群益台灣精選高息",
       "symbol": "00919.TW",
       "type": "ETF",
-      "price": 24.26,
-      "change": -0.08,
-      "changePercent": -0.33,
+      "price": 23.6,
+      "change": -0.71,
+      "changePercent": -2.92,
       "currency": "TWD",
       "trend": [
         {
           "time": "09:00",
-          "close": 24.63
+          "close": 24.01
         },
         {
           "time": "09:15",
-          "close": 24.57
+          "close": 23.91
         },
         {
           "time": "09:30",
-          "close": 24.5
+          "close": 23.8
         },
         {
           "time": "09:45",
-          "close": 24.39
+          "close": 23.67
         },
         {
           "time": "10:00",
-          "close": 24.38
+          "close": 23.62
         },
         {
           "time": "10:15",
-          "close": 24.28
+          "close": 23.57
         },
         {
           "time": "10:30",
-          "close": 24.31
+          "close": 23.7
         },
         {
           "time": "10:45",
-          "close": 24.34
+          "close": 23.71
         },
         {
           "time": "11:00",
-          "close": 24.3
+          "close": 23.69
         },
         {
           "time": "11:15",
-          "close": 24.27
+          "close": 23.68
         },
         {
           "time": "11:30",
-          "close": 24.36
+          "close": 23.64
         },
         {
           "time": "11:45",
-          "close": 24.33
+          "close": 23.59
         },
         {
           "time": "12:00",
-          "close": 24.29
+          "close": 23.61
         },
         {
           "time": "12:15",
-          "close": 24.27
-        },
-        {
-          "time": "12:30",
-          "close": 24.26
+          "close": 23.6
         }
       ]
     },
@@ -438,70 +419,66 @@
       "label": "國泰數位支付服務",
       "symbol": "00909.TW",
       "type": "ETF",
-      "price": 38.62,
-      "change": 0.51,
-      "changePercent": 1.34,
+      "price": 40.2,
+      "change": 1.58,
+      "changePercent": 4.09,
       "currency": "TWD",
       "trend": [
         {
           "time": "09:00",
-          "close": 39.11
+          "close": 40.22
         },
         {
           "time": "09:15",
-          "close": 39.02
+          "close": 40.15
         },
         {
           "time": "09:30",
-          "close": 38.98
+          "close": 40.11
         },
         {
           "time": "09:45",
-          "close": 38.82
+          "close": 39.96
         },
         {
           "time": "10:00",
-          "close": 38.72
+          "close": 39.99
         },
         {
           "time": "10:15",
-          "close": 38.62
+          "close": 40.06
         },
         {
           "time": "10:30",
-          "close": 38.7
+          "close": 40.04
         },
         {
           "time": "10:45",
-          "close": 38.7
+          "close": 40.18
         },
         {
           "time": "11:00",
-          "close": 38.73
+          "close": 40.21
         },
         {
           "time": "11:15",
-          "close": 38.65
+          "close": 40.14
         },
         {
           "time": "11:30",
-          "close": 38.74
+          "close": 40.15
         },
         {
           "time": "11:45",
-          "close": 38.75
+          "close": 40.17
         },
         {
           "time": "12:00",
-          "close": 38.75
+          "close": 40.2
         },
         {
           "time": "12:15",
-          "close": 38.7
-        },
-        {
-          "time": "12:30",
-          "close": 38.62
+          "close": 40.2
         }
       ]
     }
