@@ -198,7 +198,7 @@
           <div class="name">Podcast</div>
           <div class="desc">音訊內容入口</div>
         </a>
-        <a class="card" href="/token-dashboard/">
+        <a class="card" id="tokenDashboardCard" href="/token-dashboard/" style="display:none">
           <div class="name">Token Usage Dashboard</div>
           <div class="desc">LLM 消耗、Cron 成本、Context 占用</div>
         </a>
@@ -245,6 +245,18 @@
     </main>
 
     <script>
+      (function gateInternalCard(){
+        const card = document.getElementById('tokenDashboardCard');
+        if (!card) return;
+        const host = (location.hostname || '').toLowerCase();
+        const isLocal = ['localhost', '127.0.0.1', '::1'].includes(host) || host.endsWith('.local');
+        if (isLocal) {
+          card.style.display = '';
+        } else {
+          card.remove();
+        }
+      })();
+
       const pageKey = `views:${location.pathname}`;
       const pageViews = Number(localStorage.getItem(pageKey) || '0') + 1;
       localStorage.setItem(pageKey, String(pageViews));
