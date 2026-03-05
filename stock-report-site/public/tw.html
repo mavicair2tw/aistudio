@@ -73,7 +73,7 @@
       <div class="sub" id="updated">載入中...</div>
       <div class="sub" id="viewCounter">點閱數：--</div>
       <div class="status" id="marketStatus">檢查交易時段中...</div>
-      <div class="sub" id="dataSource">資料來源：Yahoo Finance</div>
+      <div class="sub" id="dataSource">資料來源：臺灣證券交易所 MIS（官方撮合即時資料）</div>
       <div class="sub">顏色規則：<span class="up">紅色 = 上漲</span>，<span class="down">綠色 = 下跌</span></div>
 
       <div class="chart-wrap">
@@ -188,13 +188,22 @@
           .catch(() => fetch('../data/latest.json?ts=' + Date.now()))
           .then(r => r.json())
           .then(data => {
-            document.getElementById('updated').textContent = `最後更新：${data.updatedAt} (${data.timezone})｜頁面每 60 秒檢查一次新資料`;
+            const updatedEl = document.getElementById('updated');
+            if (updatedEl) {
+              const dateLabel = data?.dataDate ? `資料日期：${data.dataDate}` : '';
+              const updateLabel = data?.updatedAt ? `最後同步：${data.updatedAt} (${data.timezone || 'Asia/Taipei'})` : '';
+              const suffix = '頁面每 60 秒檢查一次新資料';
+              updatedEl.textContent = [dateLabel, updateLabel, suffix].filter(Boolean).join('｜');
+            }
+
             document.getElementById('marketStatus').textContent = twMarketStatus();
             const sourceEl = document.getElementById('dataSource');
             if (sourceEl) {
-              const name = data?.source?.name || 'Yahoo Finance';
+              const name = data?.source?.name || '臺灣證券交易所 MIS';
               const url = data?.source?.url;
-              const html = url ? `資料來源：<a href="${url}" target="_blank" rel="noreferrer">${name}</a>（yfinance，每 15 分鐘更新）` : `資料來源：${name}`;
+              const remark = data?.source?.remarks || '官方撮合即時資料';
+              const extra = remark ? `（${remark}）` : '';
+              const html = url ? `資料來源：<a href="${url}" target="_blank" rel="noreferrer">${name}</a>${extra}` : `資料來源：${name}${extra}`;
               sourceEl.innerHTML = html;
             }
 
