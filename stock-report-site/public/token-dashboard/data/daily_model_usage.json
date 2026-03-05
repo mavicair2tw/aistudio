@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2026-03-01",
+    "models": [
+      {
+        "model": "gpt-5.1-codex",
+        "input_tokens": 2537484,
+        "output_tokens": 98209,
+        "total_tokens": 52344237
+      }
+    ],
+    "total_tokens": 52344237
+  },
+  {
+    "date": "2026-03-02",
+    "models": [],
+    "total_tokens": 0
+  },
+  {
+    "date": "2026-03-03",
+    "models": [
+      {
+        "model": "gpt-5.1-codex",
+        "input_tokens": 3342665,
+        "output_tokens": 139110,
+        "total_tokens": 33788719
+      }
+    ],
+    "total_tokens": 33788719
+  },
+  {
+    "date": "2026-03-04",
+    "models": [
+      {
+        "model": "gpt-5.1-codex",
+        "input_tokens": 450046,
+        "output_tokens": 31164,
+        "total_tokens": 12576186
+      }
+    ],
+    "total_tokens": 12576186
+  },
+  {
+    "date": "2026-03-05",
+    "models": [],
+    "total_tokens": 0
+  }
+]

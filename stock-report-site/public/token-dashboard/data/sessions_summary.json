@@ -1,0 +1,121 @@
+[
+  {
+    "session_id": "de226bd6-3d23-4f22-9703-890bc816d885",
+    "started_at": "2026-03-04T22:28:10.857000+00:00",
+    "source_label": "openclaw-control-ui",
+    "session_type": "interactive",
+    "first_user_message": "Sender (untrusted metadata):\n```json\n{\n  \"label\": \"openclaw-control-ui\",\n  \"id\": \"openclaw-control-ui\"\n}\n```\n\n[Thu 2026-03-05 06:28 GMT+8] 幫我建立一個 獨立 Token 使用量 Dashboard 網頁 ，讓我能清楚看到所有活動消耗了多少 tokens。\n\n我想了解的包含：每個 .md 檔案有多大、載入時消耗多少 tokens、每個 cron job 跑一次用多少 tokens、每次啟動新 session 消耗多少 tokens，以及過去 5 天的每日使用量（依 LLM 分類）。\n\n我要一個可以瀏覽的 context 檔案目錄，能點開資料夾查看每個檔案的大小和 context 佔用量。\n\n然後，審計我們的檔案結構和系統，找出在不損失功能的前提下優化 token 使用量的方法。\n\n在執行任何變更之前，先給我計劃和建議清單讓我確認。",
+    "total_tokens": 2004537,
+    "input_tokens": 6745,
+    "output_tokens": 6752,
+    "per_model": {
+      "gpt-5.1-codex": {
+        "input_tokens": 6745,
+        "output_tokens": 6752,
+        "total_tokens": 2004537
+      }
+    }
+  },
+  {
+    "session_id": "b88b35cc-107f-4d6a-934b-2738db2c108b",
+    "started_at": "2026-03-04T00:42:09.398000+00:00",
+    "source_label": "openclaw-control-ui",
+    "session_type": "interactive",
+    "first_user_message": "Sender (untrusted metadata):\n```json\n{\n  \"label\": \"openclaw-control-ui\",\n  \"id\": \"openclaw-control-ui\"\n}\n```\n\n[Wed 2026-03-04 08:42 GMT+8] good morning Jane",
+    "total_tokens": 10571649,
+    "input_tokens": 443301,
+    "output_tokens": 24412,
+    "per_model": {
+      "gpt-5.1-codex": {
+        "input_tokens": 443301,
+        "output_tokens": 24412,
+        "total_tokens": 10571649
+      }
+    }
+  },
+  {
+    "session_id": "213be9fa-0168-4b7a-b3f6-7ee73142b500",
+    "started_at": "2026-03-03T03:05:30.962000+00:00",
+    "source_label": null,
+    "session_type": "interactive",
+    "first_user_message": "[Tue 2026-03-03 11:05 GMT+8] hi Jane",
+    "total_tokens": 33788719,
+    "input_tokens": 3342665,
+    "output_tokens": 139110,
+    "per_model": {
+      "gpt-5.1-codex": {
+        "input_tokens": 3342665,
+        "output_tokens": 139110,
+        "total_tokens": 33788719
+      }
+    }
+  },
+  {
+    "session_id": "ffbd3fb9-0a4e-47e4-81d7-f23ce31a96be",
+    "started_at": "2026-03-01T22:24:24.255000+00:00",
+    "source_label": null,
+    "session_type": "interactive",
+    "first_user_message": "[Mon 2026-03-02 06:24 GMT+8] hi",
+    "total_tokens": 52344237,
+    "input_tokens": 2537484,
+    "output_tokens": 98209,
+    "per_model": {
+      "gpt-5.1-codex": {
+        "input_tokens": 2537484,
+        "output_tokens": 98209,
+        "total_tokens": 52344237
+      }
+    }
+  },
+  {
+    "session_id": "adf1f2fb-4ded-4f30-a706-ee038103d396",
+    "started_at": "2026-03-01T14:05:37.855000+00:00",
+    "source_label": null,
+    "session_type": "interactive",
+    "first_user_message": "A new session was started via /new or /reset. Execute your Session Startup sequence now - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning.",
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "per_model": {
+      "gpt-5.1-codex": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  },
+  {
+    "session_id": "09931449-86b3-4108-959a-46ecf3ddc396",
+    "started_at": "2026-03-01T14:05:34.580000+00:00",
+    "source_label": null,
+    "session_type": "interactive",
+    "first_user_message": "A new session was started via /new or /reset. Execute your Session Startup sequence now - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning.",
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "per_model": {
+      "gpt-5.1-codex": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  },
+  {
+    "session_id": "57cf28d4-2c30-4cab-b03c-b4cae7ce788e",
+    "started_at": "2026-03-01T13:04:49.242000+00:00",
+    "source_label": null,
+    "session_type": "interactive",
+    "first_user_message": "[Sun 2026-03-01 21:04 GMT+8] hi",
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "per_model": {
+      "gpt-5.1-codex": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  }
+]

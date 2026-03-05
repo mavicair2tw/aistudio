@@ -1,0 +1,140 @@
+[
+  {
+    "path": "AGENTS.md",
+    "size_bytes": 7869,
+    "est_tokens": 1968,
+    "category": "doc"
+  },
+  {
+    "path": "aicrm/apps/api/README.md",
+    "size_bytes": 257,
+    "est_tokens": 65,
+    "category": "doc"
+  },
+  {
+    "path": "aicrm/apps/web/README.md",
+    "size_bytes": 1450,
+    "est_tokens": 363,
+    "category": "doc"
+  },
+  {
+    "path": "aicrm/docs/architecture.md",
+    "size_bytes": 2813,
+    "est_tokens": 704,
+    "category": "doc"
+  },
+  {
+    "path": "aicrm/docs/gcp-integration.md",
+    "size_bytes": 3864,
+    "est_tokens": 966,
+    "category": "doc"
+  },
+  {
+    "path": "aicrm/README.md",
+    "size_bytes": 1267,
+    "est_tokens": 317,
+    "category": "doc"
+  },
+  {
+    "path": "archive/BOOTSTRAP.md",
+    "size_bytes": 1470,
+    "est_tokens": 368,
+    "category": "doc"
+  },
+  {
+    "path": "HEARTBEAT.md",
+    "size_bytes": 168,
+    "est_tokens": 42,
+    "category": "doc"
+  },
+  {
+    "path": "IDENTITY.md",
+    "size_bytes": 263,
+    "est_tokens": 66,
+    "category": "doc"
+  },
+  {
+    "path": "memory/2026-03-03.md",
+    "size_bytes": 533,
+    "est_tokens": 134,
+    "category": "memory"
+  },
+  {
+    "path": "memory/2026-03-04.md",
+    "size_bytes": 645,
+    "est_tokens": 162,
+    "category": "memory"
+  },
+  {
+    "path": "memory/archive/2026-03-01-api-rate-limit-reached-please-.md",
+    "size_bytes": 664,
+    "est_tokens": 166,
+    "category": "memory"
+  },
+  {
+    "path": "PromptBuilder/README.md",
+    "size_bytes": 3528,
+    "est_tokens": 882,
+    "category": "doc"
+  },
+  {
+    "path": "SOUL.md",
+    "size_bytes": 1673,
+    "est_tokens": 419,
+    "category": "doc"
+  },
+  {
+    "path": "stock-report-site-repo/btc-hourly-site/README.md",
+    "size_bytes": 349,
+    "est_tokens": 88,
+    "category": "doc"
+  },
+  {
+    "path": "stock-report-site-repo/cloudflare-chat-worker/README.md",
+    "size_bytes": 982,
+    "est_tokens": 246,
+    "category": "doc"
+  },
+  {
+    "path": "stock-report-site-repo/cloudflare-forum-worker/README.md",
+    "size_bytes": 478,
+    "est_tokens": 120,
+    "category": "doc"
+  },
+  {
+    "path": "stock-report-site-repo/crm-system/README.md",
+    "size_bytes": 2683,
+    "est_tokens": 671,
+    "category": "doc"
+  },
+  {
+    "path": "stock-report-site-repo/memory/2026-02-28.md",
+    "size_bytes": 1468,
+    "est_tokens": 367,
+    "category": "doc"
+  },
+  {
+    "path": "stock-report-site-repo/stock-report-site/forum-system/README.md",
+    "size_bytes": 4547,
+    "est_tokens": 1137,
+    "category": "doc"
+  },
+  {
+    "path": "stock-report-site-repo/stock-report-site/README.md",
+    "size_bytes": 4069,
+    "est_tokens": 1018,
+    "category": "doc"
+  },
+  {
+    "path": "TOOLS.md",
+    "size_bytes": 860,
+    "est_tokens": 215,
+    "category": "doc"
+  },
+  {
+    "path": "USER.md",
+    "size_bytes": 535,
+    "est_tokens": 134,
+    "category": "doc"
+  }
+]

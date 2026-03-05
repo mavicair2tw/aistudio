@@ -1,0 +1,3654 @@
+{
+  "name": "workspace",
+  "path": ".",
+  "type": "directory",
+  "size_bytes": 18145450,
+  "est_tokens": 4536363,
+  "children": [
+    {
+      "name": "AGENTS.md",
+      "path": "AGENTS.md",
+      "type": "file",
+      "size_bytes": 7869,
+      "est_tokens": 1968,
+      "category": "doc"
+    },
+    {
+      "name": "ai-studio",
+      "path": "ai-studio",
+      "type": "directory",
+      "size_bytes": 3007519,
+      "est_tokens": 751880,
+      "children": [
+        {
+          "name": "frames",
+          "path": "ai-studio/frames",
+          "type": "directory",
+          "size_bytes": 0,
+          "est_tokens": 0,
+          "children": []
+        },
+        {
+          "name": "gallery",
+          "path": "ai-studio/gallery",
+          "type": "directory",
+          "size_bytes": 3001382,
+          "est_tokens": 750346,
+          "children": [
+            {
+              "name": "001-cinematic-morning-scene-a-stylish-young-.png",
+              "path": "ai-studio/gallery/001-cinematic-morning-scene-a-stylish-young-.png",
+              "type": "file",
+              "size_bytes": 2999994,
+              "est_tokens": 749999,
+              "category": "other"
+            },
+            {
+              "name": "index.html",
+              "path": "ai-studio/gallery/index.html",
+              "type": "file",
+              "size_bytes": 1106,
+              "est_tokens": 277,
+              "category": "other"
+            },
+            {
+              "name": "prompts.json",
+              "path": "ai-studio/gallery/prompts.json",
+              "type": "file",
+              "size_bytes": 282,
+              "est_tokens": 71,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "index.html",
+          "path": "ai-studio/index.html",
+          "type": "file",
+          "size_bytes": 6137,
+          "est_tokens": 1535,
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "name": "aicrm",
+      "path": "aicrm",
+      "type": "directory",
+      "size_bytes": 286244,
+      "est_tokens": 71561,
+      "children": [
+        {
+          "name": "apps",
+          "path": "aicrm/apps",
+          "type": "directory",
+          "size_bytes": 277053,
+          "est_tokens": 69264,
+          "children": [
+            {
+              "name": "api",
+              "path": "aicrm/apps/api",
+              "type": "directory",
+              "size_bytes": 1583,
+              "est_tokens": 396,
+              "children": [
+                {
+                  "name": "aicrm_api",
+                  "path": "aicrm/apps/api/aicrm_api",
+                  "type": "directory",
+                  "size_bytes": 872,
+                  "est_tokens": 218,
+                  "children": [
+                    {
+                      "name": "__init__.py",
+                      "path": "aicrm/apps/api/aicrm_api/__init__.py",
+                      "type": "file",
+                      "size_bytes": 25,
+                      "est_tokens": 7,
+                      "category": "other"
+                    },
+                    {
+                      "name": "__main__.py",
+                      "path": "aicrm/apps/api/aicrm_api/__main__.py",
+                      "type": "file",
+                      "size_bytes": 121,
+                      "est_tokens": 31,
+                      "category": "other"
+                    },
+                    {
+                      "name": "main.py",
+                      "path": "aicrm/apps/api/aicrm_api/main.py",
+                      "type": "file",
+                      "size_bytes": 726,
+                      "est_tokens": 182,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "pyproject.toml",
+                  "path": "aicrm/apps/api/pyproject.toml",
+                  "type": "file",
+                  "size_bytes": 454,
+                  "est_tokens": 114,
+                  "category": "other"
+                },
+                {
+                  "name": "README.md",
+                  "path": "aicrm/apps/api/README.md",
+                  "type": "file",
+                  "size_bytes": 257,
+                  "est_tokens": 65,
+                  "category": "doc"
+                }
+              ]
+            },
+            {
+              "name": "web",
+              "path": "aicrm/apps/web",
+              "type": "directory",
+              "size_bytes": 275470,
+              "est_tokens": 68868,
+              "children": [
+                {
+                  "name": ".gitignore",
+                  "path": "aicrm/apps/web/.gitignore",
+                  "type": "file",
+                  "size_bytes": 480,
+                  "est_tokens": 120,
+                  "category": "other"
+                },
+                {
+                  "name": ".next",
+                  "path": "aicrm/apps/web/.next",
+                  "type": "directory",
+                  "size_bytes": 9362,
+                  "est_tokens": 2341,
+                  "children": [
+                    {
+                      "name": "types",
+                      "path": "aicrm/apps/web/.next/types",
+                      "type": "directory",
+                      "size_bytes": 9362,
+                      "est_tokens": 2341,
+                      "children": [
+                        {
+                          "name": "cache-life.d.ts",
+                          "path": "aicrm/apps/web/.next/types/cache-life.d.ts",
+                          "type": "file",
+                          "size_bytes": 5854,
+                          "est_tokens": 1464,
+                          "category": "other"
+                        },
+                        {
+                          "name": "routes.d.ts",
+                          "path": "aicrm/apps/web/.next/types/routes.d.ts",
+                          "type": "file",
+                          "size_bytes": 1397,
+                          "est_tokens": 350,
+                          "category": "other"
+                        },
+                        {
+                          "name": "validator.ts",
+                          "path": "aicrm/apps/web/.next/types/validator.ts",
+                          "type": "file",
+                          "size_bytes": 2111,
+                          "est_tokens": 528,
+                          "category": "other"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "eslint.config.mjs",
+                  "path": "aicrm/apps/web/eslint.config.mjs",
+                  "type": "file",
+                  "size_bytes": 465,
+                  "est_tokens": 117,
+                  "category": "other"
+                },
+                {
+                  "name": "next-env.d.ts",
+                  "path": "aicrm/apps/web/next-env.d.ts",
+                  "type": "file",
+                  "size_bytes": 247,
+                  "est_tokens": 62,
+                  "category": "other"
+                },
+                {
+                  "name": "next.config.ts",
+                  "path": "aicrm/apps/web/next.config.ts",
+                  "type": "file",
+                  "size_bytes": 133,
+                  "est_tokens": 34,
+                  "category": "other"
+                },
+                {
+                  "name": "package-lock.json",
+                  "path": "aicrm/apps/web/package-lock.json",
+                  "type": "file",
+                  "size_bytes": 228737,
+                  "est_tokens": 57185,
+                  "category": "other"
+                },
+                {
+                  "name": "package.json",
+                  "path": "aicrm/apps/web/package.json",
+                  "type": "file",
+                  "size_bytes": 525,
+                  "est_tokens": 132,
+                  "category": "other"
+                },
+                {
+                  "name": "postcss.config.mjs",
+                  "path": "aicrm/apps/web/postcss.config.mjs",
+                  "type": "file",
+                  "size_bytes": 94,
+                  "est_tokens": 24,
+                  "category": "other"
+                },
+                {
+                  "name": "public",
+                  "path": "aicrm/apps/web/public",
+                  "type": "directory",
+                  "size_bytes": 3314,
+                  "est_tokens": 829,
+                  "children": [
+                    {
+                      "name": "file.svg",
+                      "path": "aicrm/apps/web/public/file.svg",
+                      "type": "file",
+                      "size_bytes": 391,
+                      "est_tokens": 98,
+                      "category": "other"
+                    },
+                    {
+                      "name": "globe.svg",
+                      "path": "aicrm/apps/web/public/globe.svg",
+                      "type": "file",
+                      "size_bytes": 1035,
+                      "est_tokens": 259,
+                      "category": "other"
+                    },
+                    {
+                      "name": "next.svg",
+                      "path": "aicrm/apps/web/public/next.svg",
+                      "type": "file",
+                      "size_bytes": 1375,
+                      "est_tokens": 344,
+                      "category": "other"
+                    },
+                    {
+                      "name": "vercel.svg",
+                      "path": "aicrm/apps/web/public/vercel.svg",
+                      "type": "file",
+                      "size_bytes": 128,
+                      "est_tokens": 32,
+                      "category": "other"
+                    },
+                    {
+                      "name": "window.svg",
+                      "path": "aicrm/apps/web/public/window.svg",
+                      "type": "file",
+                      "size_bytes": 385,
+                      "est_tokens": 97,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "README.md",
+                  "path": "aicrm/apps/web/README.md",
+                  "type": "file",
+                  "size_bytes": 1450,
+                  "est_tokens": 363,
+                  "category": "doc"
+                },
+                {
+                  "name": "src",
+                  "path": "aicrm/apps/web/src",
+                  "type": "directory",
+                  "size_bytes": 29993,
+                  "est_tokens": 7499,
+                  "children": [
+                    {
+                      "name": "app",
+                      "path": "aicrm/apps/web/src/app",
+                      "type": "directory",
+                      "size_bytes": 29993,
+                      "est_tokens": 7499,
+                      "children": [
+                        {
+                          "name": "favicon.ico",
+                          "path": "aicrm/apps/web/src/app/favicon.ico",
+                          "type": "file",
+                          "size_bytes": 25931,
+                          "est_tokens": 6483,
+                          "category": "other"
+                        },
+                        {
+                          "name": "globals.css",
+                          "path": "aicrm/apps/web/src/app/globals.css",
+                          "type": "file",
+                          "size_bytes": 488,
+                          "est_tokens": 122,
+                          "category": "other"
+                        },
+                        {
+                          "name": "layout.tsx",
+                          "path": "aicrm/apps/web/src/app/layout.tsx",
+                          "type": "file",
+                          "size_bytes": 689,
+                          "est_tokens": 173,
+                          "category": "other"
+                        },
+                        {
+                          "name": "page.tsx",
+                          "path": "aicrm/apps/web/src/app/page.tsx",
+                          "type": "file",
+                          "size_bytes": 2885,
+                          "est_tokens": 722,
+                          "category": "other"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "tsconfig.json",
+                  "path": "aicrm/apps/web/tsconfig.json",
+                  "type": "file",
+                  "size_bytes": 670,
+                  "est_tokens": 168,
+                  "category": "other"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "docs",
+          "path": "aicrm/docs",
+          "type": "directory",
+          "size_bytes": 6677,
+          "est_tokens": 1670,
+          "children": [
+            {
+              "name": "architecture.md",
+              "path": "aicrm/docs/architecture.md",
+              "type": "file",
+              "size_bytes": 2813,
+              "est_tokens": 704,
+              "category": "doc"
+            },
+            {
+              "name": "gcp-integration.md",
+              "path": "aicrm/docs/gcp-integration.md",
+              "type": "file",
+              "size_bytes": 3864,
+              "est_tokens": 966,
+              "category": "doc"
+            }
+          ]
+        },
+        {
+          "name": "package.json",
+          "path": "aicrm/package.json",
+          "type": "file",
+          "size_bytes": 214,
+          "est_tokens": 54,
+          "category": "other"
+        },
+        {
+          "name": "packages",
+          "path": "aicrm/packages",
+          "type": "directory",
+          "size_bytes": 1033,
+          "est_tokens": 259,
+          "children": [
+            {
+              "name": "shared",
+              "path": "aicrm/packages/shared",
+              "type": "directory",
+              "size_bytes": 1033,
+              "est_tokens": 259,
+              "children": [
+                {
+                  "name": "package.json",
+                  "path": "aicrm/packages/shared/package.json",
+                  "type": "file",
+                  "size_bytes": 165,
+                  "est_tokens": 42,
+                  "category": "other"
+                },
+                {
+                  "name": "src",
+                  "path": "aicrm/packages/shared/src",
+                  "type": "directory",
+                  "size_bytes": 868,
+                  "est_tokens": 217,
+                  "children": [
+                    {
+                      "name": "prompts.ts",
+                      "path": "aicrm/packages/shared/src/prompts.ts",
+                      "type": "file",
+                      "size_bytes": 478,
+                      "est_tokens": 120,
+                      "category": "other"
+                    },
+                    {
+                      "name": "schemas.ts",
+                      "path": "aicrm/packages/shared/src/schemas.ts",
+                      "type": "file",
+                      "size_bytes": 390,
+                      "est_tokens": 98,
+                      "category": "other"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "path": "aicrm/README.md",
+          "type": "file",
+          "size_bytes": 1267,
+          "est_tokens": 317,
+          "category": "doc"
+        }
+      ]
+    },
+    {
+      "name": "aicrm-agent",
+      "path": "aicrm-agent",
+      "type": "directory",
+      "size_bytes": 8016,
+      "est_tokens": 2004,
+      "children": [
+        {
+          "name": "agents",
+          "path": "aicrm-agent/agents",
+          "type": "directory",
+          "size_bytes": 2467,
+          "est_tokens": 617,
+          "children": [
+            {
+              "name": "main_agent.py",
+              "path": "aicrm-agent/agents/main_agent.py",
+              "type": "file",
+              "size_bytes": 1898,
+              "est_tokens": 475,
+              "category": "other"
+            },
+            {
+              "name": "reflection.py",
+              "path": "aicrm-agent/agents/reflection.py",
+              "type": "file",
+              "size_bytes": 569,
+              "est_tokens": 143,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "memory",
+          "path": "aicrm-agent/memory",
+          "type": "directory",
+          "size_bytes": 105,
+          "est_tokens": 27,
+          "children": [
+            {
+              "name": "distilled.json",
+              "path": "aicrm-agent/memory/distilled.json",
+              "type": "file",
+              "size_bytes": 105,
+              "est_tokens": 27,
+              "category": "other"
+            },
+            {
+              "name": "snapshots",
+              "path": "aicrm-agent/memory/snapshots",
+              "type": "directory",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "router",
+          "path": "aicrm-agent/router",
+          "type": "directory",
+          "size_bytes": 1160,
+          "est_tokens": 290,
+          "children": [
+            {
+              "name": "model_router.py",
+              "path": "aicrm-agent/router/model_router.py",
+              "type": "file",
+              "size_bytes": 600,
+              "est_tokens": 150,
+              "category": "other"
+            },
+            {
+              "name": "skill_router.py",
+              "path": "aicrm-agent/router/skill_router.py",
+              "type": "file",
+              "size_bytes": 560,
+              "est_tokens": 140,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "skills",
+          "path": "aicrm-agent/skills",
+          "type": "directory",
+          "size_bytes": 2165,
+          "est_tokens": 542,
+          "children": [
+            {
+              "name": "api_caller.py",
+              "path": "aicrm-agent/skills/api_caller.py",
+              "type": "file",
+              "size_bytes": 587,
+              "est_tokens": 147,
+              "category": "other"
+            },
+            {
+              "name": "data_formatter.py",
+              "path": "aicrm-agent/skills/data_formatter.py",
+              "type": "file",
+              "size_bytes": 477,
+              "est_tokens": 120,
+              "category": "other"
+            },
+            {
+              "name": "prompt_generator.py",
+              "path": "aicrm-agent/skills/prompt_generator.py",
+              "type": "file",
+              "size_bytes": 518,
+              "est_tokens": 130,
+              "category": "other"
+            },
+            {
+              "name": "stock_analysis.py",
+              "path": "aicrm-agent/skills/stock_analysis.py",
+              "type": "file",
+              "size_bytes": 583,
+              "est_tokens": 146,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "snippets",
+          "path": "aicrm-agent/snippets",
+          "type": "directory",
+          "size_bytes": 0,
+          "est_tokens": 0,
+          "children": []
+        },
+        {
+          "name": "utils",
+          "path": "aicrm-agent/utils",
+          "type": "directory",
+          "size_bytes": 2119,
+          "est_tokens": 530,
+          "children": [
+            {
+              "name": "distillation.py",
+              "path": "aicrm-agent/utils/distillation.py",
+              "type": "file",
+              "size_bytes": 1906,
+              "est_tokens": 477,
+              "category": "other"
+            },
+            {
+              "name": "logging.py",
+              "path": "aicrm-agent/utils/logging.py",
+              "type": "file",
+              "size_bytes": 213,
+              "est_tokens": 54,
+              "category": "other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "analytics",
+      "path": "analytics",
+      "type": "directory",
+      "size_bytes": 173,
+      "est_tokens": 44,
+      "children": [
+        {
+          "name": "token-usage",
+          "path": "analytics/token-usage",
+          "type": "directory",
+          "size_bytes": 173,
+          "est_tokens": 44,
+          "children": [
+            {
+              "name": "raw",
+              "path": "analytics/token-usage/raw",
+              "type": "directory",
+              "size_bytes": 173,
+              "est_tokens": 44,
+              "children": [
+                {
+                  "name": "claude.json",
+                  "path": "analytics/token-usage/raw/claude.json",
+                  "type": "file",
+                  "size_bytes": 87,
+                  "est_tokens": 22,
+                  "category": "other"
+                },
+                {
+                  "name": "codex.json",
+                  "path": "analytics/token-usage/raw/codex.json",
+                  "type": "file",
+                  "size_bytes": 86,
+                  "est_tokens": 22,
+                  "category": "other"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "archive",
+      "path": "archive",
+      "type": "directory",
+      "size_bytes": 1470,
+      "est_tokens": 368,
+      "children": [
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "archive/BOOTSTRAP.md",
+          "type": "file",
+          "size_bytes": 1470,
+          "est_tokens": 368,
+          "category": "doc"
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "path": "data",
+      "type": "directory",
+      "size_bytes": 133462,
+      "est_tokens": 33366,
+      "children": [
+        {
+          "name": "context_files.json",
+          "path": "data/context_files.json",
+          "type": "file",
+          "size_bytes": 2834,
+          "est_tokens": 709,
+          "category": "other"
+        },
+        {
+          "name": "context_tree.json",
+          "path": "data/context_tree.json",
+          "type": "file",
+          "size_bytes": 124584,
+          "est_tokens": 31146,
+          "category": "other"
+        },
+        {
+          "name": "cron_costs.json",
+          "path": "data/cron_costs.json",
+          "type": "file",
+          "size_bytes": 3,
+          "est_tokens": 1,
+          "category": "other"
+        },
+        {
+          "name": "daily_model_usage.json",
+          "path": "data/daily_model_usage.json",
+          "type": "file",
+          "size_bytes": 858,
+          "est_tokens": 215,
+          "category": "other"
+        },
+        {
+          "name": "sessions_summary.json",
+          "path": "data/sessions_summary.json",
+          "type": "file",
+          "size_bytes": 5183,
+          "est_tokens": 1296,
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "HEARTBEAT.md",
+      "type": "file",
+      "size_bytes": 168,
+      "est_tokens": 42,
+      "category": "doc"
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "IDENTITY.md",
+      "type": "file",
+      "size_bytes": 263,
+      "est_tokens": 66,
+      "category": "doc"
+    },
+    {
+      "name": "logs",
+      "path": "logs",
+      "type": "directory",
+      "size_bytes": 170,
+      "est_tokens": 43,
+      "children": [
+        {
+          "name": "btc_collect.log",
+          "path": "logs/btc_collect.log",
+          "type": "file",
+          "size_bytes": 170,
+          "est_tokens": 43,
+          "category": "other"
+        },
+        {
+          "name": "token-dashboard-refresh.err.log",
+          "path": "logs/token-dashboard-refresh.err.log",
+          "type": "file",
+          "size_bytes": 0,
+          "est_tokens": 0,
+          "category": "other"
+        },
+        {
+          "name": "token-dashboard-refresh.log",
+          "path": "logs/token-dashboard-refresh.log",
+          "type": "file",
+          "size_bytes": 0,
+          "est_tokens": 0,
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "name": "memory",
+      "path": "memory",
+      "type": "directory",
+      "size_bytes": 1842,
+      "est_tokens": 461,
+      "children": [
+        {
+          "name": "2026-03-03.md",
+          "path": "memory/2026-03-03.md",
+          "type": "file",
+          "size_bytes": 533,
+          "est_tokens": 134,
+          "category": "memory"
+        },
+        {
+          "name": "2026-03-04.md",
+          "path": "memory/2026-03-04.md",
+          "type": "file",
+          "size_bytes": 645,
+          "est_tokens": 162,
+          "category": "memory"
+        },
+        {
+          "name": "archive",
+          "path": "memory/archive",
+          "type": "directory",
+          "size_bytes": 664,
+          "est_tokens": 166,
+          "children": [
+            {
+              "name": "2026-03-01-api-rate-limit-reached-please-.md",
+              "path": "memory/archive/2026-03-01-api-rate-limit-reached-please-.md",
+              "type": "file",
+              "size_bytes": 664,
+              "est_tokens": 166,
+              "category": "memory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "openai-tw-site",
+      "path": "openai-tw-site",
+      "type": "directory",
+      "size_bytes": 3583739,
+      "est_tokens": 895935,
+      "children": [
+        {
+          "name": "ai-studio",
+          "path": "openai-tw-site/ai-studio",
+          "type": "directory",
+          "size_bytes": 3007519,
+          "est_tokens": 751880,
+          "children": [
+            {
+              "name": "gallery",
+              "path": "openai-tw-site/ai-studio/gallery",
+              "type": "directory",
+              "size_bytes": 3001382,
+              "est_tokens": 750346,
+              "children": [
+                {
+                  "name": "001-cinematic-morning-scene-a-stylish-young-.png",
+                  "path": "openai-tw-site/ai-studio/gallery/001-cinematic-morning-scene-a-stylish-young-.png",
+                  "type": "file",
+                  "size_bytes": 2999994,
+                  "est_tokens": 749999,
+                  "category": "other"
+                },
+                {
+                  "name": "index.html",
+                  "path": "openai-tw-site/ai-studio/gallery/index.html",
+                  "type": "file",
+                  "size_bytes": 1106,
+                  "est_tokens": 277,
+                  "category": "other"
+                },
+                {
+                  "name": "prompts.json",
+                  "path": "openai-tw-site/ai-studio/gallery/prompts.json",
+                  "type": "file",
+                  "size_bytes": 282,
+                  "est_tokens": 71,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/ai-studio/index.html",
+              "type": "file",
+              "size_bytes": 6137,
+              "est_tokens": 1535,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "aicrm",
+          "path": "openai-tw-site/aicrm",
+          "type": "directory",
+          "size_bytes": 2878,
+          "est_tokens": 720,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/aicrm/index.html",
+              "type": "file",
+              "size_bytes": 2878,
+              "est_tokens": 720,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "assets",
+          "path": "openai-tw-site/assets",
+          "type": "directory",
+          "size_bytes": 127634,
+          "est_tokens": 31909,
+          "children": [
+            {
+              "name": "hero.jpg",
+              "path": "openai-tw-site/assets/hero.jpg",
+              "type": "file",
+              "size_bytes": 121692,
+              "est_tokens": 30423,
+              "category": "other"
+            },
+            {
+              "name": "line-qr.png",
+              "path": "openai-tw-site/assets/line-qr.png",
+              "type": "file",
+              "size_bytes": 5942,
+              "est_tokens": 1486,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "btc-hourly",
+          "path": "openai-tw-site/btc-hourly",
+          "type": "directory",
+          "size_bytes": 15135,
+          "est_tokens": 3784,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/btc-hourly/data",
+              "type": "directory",
+              "size_bytes": 7870,
+              "est_tokens": 1968,
+              "children": [
+                {
+                  "name": "latest.json",
+                  "path": "openai-tw-site/btc-hourly/data/latest.json",
+                  "type": "file",
+                  "size_bytes": 7870,
+                  "est_tokens": 1968,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/btc-hourly/index.html",
+              "type": "file",
+              "size_bytes": 7265,
+              "est_tokens": 1817,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "chat",
+          "path": "openai-tw-site/chat",
+          "type": "directory",
+          "size_bytes": 20430,
+          "est_tokens": 5108,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/chat/index.html",
+              "type": "file",
+              "size_bytes": 20430,
+              "est_tokens": 5108,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "CNAME",
+          "path": "openai-tw-site/CNAME",
+          "type": "file",
+          "size_bytes": 14,
+          "est_tokens": 4,
+          "category": "other"
+        },
+        {
+          "name": "coffee-news",
+          "path": "openai-tw-site/coffee-news",
+          "type": "directory",
+          "size_bytes": 17715,
+          "est_tokens": 4429,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/coffee-news/data",
+              "type": "directory",
+              "size_bytes": 11447,
+              "est_tokens": 2862,
+              "children": [
+                {
+                  "name": "coffee_news.json",
+                  "path": "openai-tw-site/coffee-news/data/coffee_news.json",
+                  "type": "file",
+                  "size_bytes": 11447,
+                  "est_tokens": 2862,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/coffee-news/index.html",
+              "type": "file",
+              "size_bytes": 6268,
+              "est_tokens": 1567,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "forum",
+          "path": "openai-tw-site/forum",
+          "type": "directory",
+          "size_bytes": 13099,
+          "est_tokens": 3275,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/forum/index.html",
+              "type": "file",
+              "size_bytes": 13099,
+              "est_tokens": 3275,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "guestbook",
+          "path": "openai-tw-site/guestbook",
+          "type": "directory",
+          "size_bytes": 20430,
+          "est_tokens": 5108,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/guestbook/index.html",
+              "type": "file",
+              "size_bytes": 20430,
+              "est_tokens": 5108,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "health-triage",
+          "path": "openai-tw-site/health-triage",
+          "type": "directory",
+          "size_bytes": 33128,
+          "est_tokens": 8282,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/health-triage/data",
+              "type": "directory",
+              "size_bytes": 11323,
+              "est_tokens": 2831,
+              "children": [
+                {
+                  "name": "health-comorb-config.zh-TW.json",
+                  "path": "openai-tw-site/health-triage/data/health-comorb-config.zh-TW.json",
+                  "type": "file",
+                  "size_bytes": 694,
+                  "est_tokens": 174,
+                  "category": "other"
+                },
+                {
+                  "name": "health-form-config.zh-TW.json",
+                  "path": "openai-tw-site/health-triage/data/health-form-config.zh-TW.json",
+                  "type": "file",
+                  "size_bytes": 5999,
+                  "est_tokens": 1500,
+                  "category": "other"
+                },
+                {
+                  "name": "health-rules-template.json",
+                  "path": "openai-tw-site/health-triage/data/health-rules-template.json",
+                  "type": "file",
+                  "size_bytes": 4073,
+                  "est_tokens": 1019,
+                  "category": "other"
+                },
+                {
+                  "name": "health-vitals-config.zh-TW.json",
+                  "path": "openai-tw-site/health-triage/data/health-vitals-config.zh-TW.json",
+                  "type": "file",
+                  "size_bytes": 557,
+                  "est_tokens": 140,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/health-triage/index.html",
+              "type": "file",
+              "size_bytes": 21805,
+              "est_tokens": 5452,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "index.html",
+          "path": "openai-tw-site/index.html",
+          "type": "file",
+          "size_bytes": 16116,
+          "est_tokens": 4029,
+          "category": "other"
+        },
+        {
+          "name": "interesting-stories",
+          "path": "openai-tw-site/interesting-stories",
+          "type": "directory",
+          "size_bytes": 16463,
+          "est_tokens": 4116,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/interesting-stories/data",
+              "type": "directory",
+              "size_bytes": 10237,
+              "est_tokens": 2560,
+              "children": [
+                {
+                  "name": "interesting_stories.json",
+                  "path": "openai-tw-site/interesting-stories/data/interesting_stories.json",
+                  "type": "file",
+                  "size_bytes": 10237,
+                  "est_tokens": 2560,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/interesting-stories/index.html",
+              "type": "file",
+              "size_bytes": 6226,
+              "est_tokens": 1557,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "music",
+          "path": "openai-tw-site/music",
+          "type": "directory",
+          "size_bytes": 3402,
+          "est_tokens": 851,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/music/index.html",
+              "type": "file",
+              "size_bytes": 3402,
+              "est_tokens": 851,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "name-analysis",
+          "path": "openai-tw-site/name-analysis",
+          "type": "directory",
+          "size_bytes": 9747,
+          "est_tokens": 2437,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/name-analysis/index.html",
+              "type": "file",
+              "size_bytes": 9747,
+              "est_tokens": 2437,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "podcast",
+          "path": "openai-tw-site/podcast",
+          "type": "directory",
+          "size_bytes": 4192,
+          "est_tokens": 1048,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/podcast/index.html",
+              "type": "file",
+              "size_bytes": 4192,
+              "est_tokens": 1048,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "prompt-builder",
+          "path": "openai-tw-site/prompt-builder",
+          "type": "directory",
+          "size_bytes": 164871,
+          "est_tokens": 41218,
+          "children": [
+            {
+              "name": "assets",
+              "path": "openai-tw-site/prompt-builder/assets",
+              "type": "directory",
+              "size_bytes": 163924,
+              "est_tokens": 40981,
+              "children": [
+                {
+                  "name": "index-CjjKzmtm.js",
+                  "path": "openai-tw-site/prompt-builder/assets/index-CjjKzmtm.js",
+                  "type": "file",
+                  "size_bytes": 159847,
+                  "est_tokens": 39962,
+                  "category": "other"
+                },
+                {
+                  "name": "index-d4A5EuVg.css",
+                  "path": "openai-tw-site/prompt-builder/assets/index-d4A5EuVg.css",
+                  "type": "file",
+                  "size_bytes": 4077,
+                  "est_tokens": 1020,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "favicon.svg",
+              "path": "openai-tw-site/prompt-builder/favicon.svg",
+              "type": "file",
+              "size_bytes": 439,
+              "est_tokens": 110,
+              "category": "other"
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/prompt-builder/index.html",
+              "type": "file",
+              "size_bytes": 508,
+              "est_tokens": 127,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "PromptBuilder",
+          "path": "openai-tw-site/PromptBuilder",
+          "type": "directory",
+          "size_bytes": 393,
+          "est_tokens": 99,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/PromptBuilder/index.html",
+              "type": "file",
+              "size_bytes": 393,
+              "est_tokens": 99,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "search",
+          "path": "openai-tw-site/search",
+          "type": "directory",
+          "size_bytes": 416,
+          "est_tokens": 104,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/search/index.html",
+              "type": "file",
+              "size_bytes": 416,
+              "est_tokens": 104,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "stock-search",
+          "path": "openai-tw-site/stock-search",
+          "type": "directory",
+          "size_bytes": 7666,
+          "est_tokens": 1917,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/stock-search/index.html",
+              "type": "file",
+              "size_bytes": 7666,
+              "est_tokens": 1917,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "tag-cloud",
+          "path": "openai-tw-site/tag-cloud",
+          "type": "directory",
+          "size_bytes": 11793,
+          "est_tokens": 2949,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/tag-cloud/index.html",
+              "type": "file",
+              "size_bytes": 11793,
+              "est_tokens": 2949,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "tw",
+          "path": "openai-tw-site/tw",
+          "type": "directory",
+          "size_bytes": 21426,
+          "est_tokens": 5357,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/tw/data",
+              "type": "directory",
+              "size_bytes": 11004,
+              "est_tokens": 2751,
+              "children": [
+                {
+                  "name": "latest.json",
+                  "path": "openai-tw-site/tw/data/latest.json",
+                  "type": "file",
+                  "size_bytes": 11004,
+                  "est_tokens": 2751,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/tw/index.html",
+              "type": "file",
+              "size_bytes": 10422,
+              "est_tokens": 2606,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "tw-news",
+          "path": "openai-tw-site/tw-news",
+          "type": "directory",
+          "size_bytes": 7449,
+          "est_tokens": 1863,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/tw-news/data",
+              "type": "directory",
+              "size_bytes": 1515,
+              "est_tokens": 379,
+              "children": [
+                {
+                  "name": "tw_news.json",
+                  "path": "openai-tw-site/tw-news/data/tw_news.json",
+                  "type": "file",
+                  "size_bytes": 1515,
+                  "est_tokens": 379,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/tw-news/index.html",
+              "type": "file",
+              "size_bytes": 5934,
+              "est_tokens": 1484,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "us",
+          "path": "openai-tw-site/us",
+          "type": "directory",
+          "size_bytes": 25271,
+          "est_tokens": 6318,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/us/data",
+              "type": "directory",
+              "size_bytes": 17518,
+              "est_tokens": 4380,
+              "children": [
+                {
+                  "name": "us_latest.json",
+                  "path": "openai-tw-site/us/data/us_latest.json",
+                  "type": "file",
+                  "size_bytes": 17518,
+                  "est_tokens": 4380,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/us/index.html",
+              "type": "file",
+              "size_bytes": 7753,
+              "est_tokens": 1939,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "us-news",
+          "path": "openai-tw-site/us-news",
+          "type": "directory",
+          "size_bytes": 8594,
+          "est_tokens": 2149,
+          "children": [
+            {
+              "name": "data",
+              "path": "openai-tw-site/us-news/data",
+              "type": "directory",
+              "size_bytes": 2664,
+              "est_tokens": 666,
+              "children": [
+                {
+                  "name": "us_news.json",
+                  "path": "openai-tw-site/us-news/data/us_news.json",
+                  "type": "file",
+                  "size_bytes": 2664,
+                  "est_tokens": 666,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/us-news/index.html",
+              "type": "file",
+              "size_bytes": 5930,
+              "est_tokens": 1483,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "YouTube",
+          "path": "openai-tw-site/YouTube",
+          "type": "directory",
+          "size_bytes": 3999,
+          "est_tokens": 1000,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/YouTube/index.html",
+              "type": "file",
+              "size_bytes": 3999,
+              "est_tokens": 1000,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "ziweidoushu",
+          "path": "openai-tw-site/ziweidoushu",
+          "type": "directory",
+          "size_bytes": 23959,
+          "est_tokens": 5990,
+          "children": [
+            {
+              "name": "index.html",
+              "path": "openai-tw-site/ziweidoushu/index.html",
+              "type": "file",
+              "size_bytes": 23959,
+              "est_tokens": 5990,
+              "category": "other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PromptBuilder",
+      "path": "PromptBuilder",
+      "type": "directory",
+      "size_bytes": 312646,
+      "est_tokens": 78162,
+      "children": [
+        {
+          "name": ".env.example",
+          "path": "PromptBuilder/.env.example",
+          "type": "file",
+          "size_bytes": 153,
+          "est_tokens": 39,
+          "category": "other"
+        },
+        {
+          "name": ".github",
+          "path": "PromptBuilder/.github",
+          "type": "directory",
+          "size_bytes": 743,
+          "est_tokens": 186,
+          "children": [
+            {
+              "name": "workflows",
+              "path": "PromptBuilder/.github/workflows",
+              "type": "directory",
+              "size_bytes": 743,
+              "est_tokens": 186,
+              "children": [
+                {
+                  "name": "deploy.yml",
+                  "path": "PromptBuilder/.github/workflows/deploy.yml",
+                  "type": "file",
+                  "size_bytes": 743,
+                  "est_tokens": 186,
+                  "category": "other"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "path": "PromptBuilder/.gitignore",
+          "type": "file",
+          "size_bytes": 91,
+          "est_tokens": 23,
+          "category": "other"
+        },
+        {
+          "name": "dist",
+          "path": "PromptBuilder/dist",
+          "type": "directory",
+          "size_bytes": 168171,
+          "est_tokens": 42043,
+          "children": [
+            {
+              "name": "assets",
+              "path": "PromptBuilder/dist/assets",
+              "type": "directory",
+              "size_bytes": 167224,
+              "est_tokens": 41806,
+              "children": [
+                {
+                  "name": "index-Dlz2AHgG.css",
+                  "path": "PromptBuilder/dist/assets/index-Dlz2AHgG.css",
+                  "type": "file",
+                  "size_bytes": 4439,
+                  "est_tokens": 1110,
+                  "category": "other"
+                },
+                {
+                  "name": "index-l3kC2-Pn.js",
+                  "path": "PromptBuilder/dist/assets/index-l3kC2-Pn.js",
+                  "type": "file",
+                  "size_bytes": 162785,
+                  "est_tokens": 40697,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "favicon.svg",
+              "path": "PromptBuilder/dist/favicon.svg",
+              "type": "file",
+              "size_bytes": 439,
+              "est_tokens": 110,
+              "category": "other"
+            },
+            {
+              "name": "index.html",
+              "path": "PromptBuilder/dist/index.html",
+              "type": "file",
+              "size_bytes": 508,
+              "est_tokens": 127,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "index.html",
+          "path": "PromptBuilder/index.html",
+          "type": "file",
+          "size_bytes": 407,
+          "est_tokens": 102,
+          "category": "other"
+        },
+        {
+          "name": "package-lock.json",
+          "path": "PromptBuilder/package-lock.json",
+          "type": "file",
+          "size_bytes": 88840,
+          "est_tokens": 22210,
+          "category": "other"
+        },
+        {
+          "name": "package.json",
+          "path": "PromptBuilder/package.json",
+          "type": "file",
+          "size_bytes": 625,
+          "est_tokens": 157,
+          "category": "other"
+        },
+        {
+          "name": "public",
+          "path": "PromptBuilder/public",
+          "type": "directory",
+          "size_bytes": 439,
+          "est_tokens": 110,
+          "children": [
+            {
+              "name": "favicon.svg",
+              "path": "PromptBuilder/public/favicon.svg",
+              "type": "file",
+              "size_bytes": 439,
+              "est_tokens": 110,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "path": "PromptBuilder/README.md",
+          "type": "file",
+          "size_bytes": 3528,
+          "est_tokens": 882,
+          "category": "doc"
+        },
+        {
+          "name": "server",
+          "path": "PromptBuilder/server",
+          "type": "directory",
+          "size_bytes": 6091,
+          "est_tokens": 1523,
+          "children": [
+            {
+              "name": "index.js",
+              "path": "PromptBuilder/server/index.js",
+              "type": "file",
+              "size_bytes": 6091,
+              "est_tokens": 1523,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "src",
+          "path": "PromptBuilder/src",
+          "type": "directory",
+          "size_bytes": 42838,
+          "est_tokens": 10710,
+          "children": [
+            {
+              "name": "App.tsx",
+              "path": "PromptBuilder/src/App.tsx",
+              "type": "file",
+              "size_bytes": 15718,
+              "est_tokens": 3930,
+              "category": "other"
+            },
+            {
+              "name": "components",
+              "path": "PromptBuilder/src/components",
+              "type": "directory",
+              "size_bytes": 15552,
+              "est_tokens": 3888,
+              "children": [
+                {
+                  "name": "DonateBar.tsx",
+                  "path": "PromptBuilder/src/components/DonateBar.tsx",
+                  "type": "file",
+                  "size_bytes": 381,
+                  "est_tokens": 96,
+                  "category": "other"
+                },
+                {
+                  "name": "OutputPanel.tsx",
+                  "path": "PromptBuilder/src/components/OutputPanel.tsx",
+                  "type": "file",
+                  "size_bytes": 5298,
+                  "est_tokens": 1325,
+                  "category": "other"
+                },
+                {
+                  "name": "PresetExamples.tsx",
+                  "path": "PromptBuilder/src/components/PresetExamples.tsx",
+                  "type": "file",
+                  "size_bytes": 666,
+                  "est_tokens": 167,
+                  "category": "other"
+                },
+                {
+                  "name": "Sidebar.tsx",
+                  "path": "PromptBuilder/src/components/Sidebar.tsx",
+                  "type": "file",
+                  "size_bytes": 4878,
+                  "est_tokens": 1220,
+                  "category": "other"
+                },
+                {
+                  "name": "StoryboardEditor.tsx",
+                  "path": "PromptBuilder/src/components/StoryboardEditor.tsx",
+                  "type": "file",
+                  "size_bytes": 4329,
+                  "est_tokens": 1083,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "data",
+              "path": "PromptBuilder/src/data",
+              "type": "directory",
+              "size_bytes": 4372,
+              "est_tokens": 1093,
+              "children": [
+                {
+                  "name": "options.ts",
+                  "path": "PromptBuilder/src/data/options.ts",
+                  "type": "file",
+                  "size_bytes": 4372,
+                  "est_tokens": 1093,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "hooks",
+              "path": "PromptBuilder/src/hooks",
+              "type": "directory",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "children": []
+            },
+            {
+              "name": "main.tsx",
+              "path": "PromptBuilder/src/main.tsx",
+              "type": "file",
+              "size_bytes": 214,
+              "est_tokens": 54,
+              "category": "other"
+            },
+            {
+              "name": "styles",
+              "path": "PromptBuilder/src/styles",
+              "type": "directory",
+              "size_bytes": 5602,
+              "est_tokens": 1401,
+              "children": [
+                {
+                  "name": "App.css",
+                  "path": "PromptBuilder/src/styles/App.css",
+                  "type": "file",
+                  "size_bytes": 5602,
+                  "est_tokens": 1401,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "types.ts",
+              "path": "PromptBuilder/src/types.ts",
+              "type": "file",
+              "size_bytes": 1342,
+              "est_tokens": 336,
+              "category": "other"
+            },
+            {
+              "name": "vite-env.d.ts",
+              "path": "PromptBuilder/src/vite-env.d.ts",
+              "type": "file",
+              "size_bytes": 38,
+              "est_tokens": 10,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "tsconfig.json",
+          "path": "PromptBuilder/tsconfig.json",
+          "type": "file",
+          "size_bytes": 163,
+          "est_tokens": 41,
+          "category": "other"
+        },
+        {
+          "name": "tsconfig.node.json",
+          "path": "PromptBuilder/tsconfig.node.json",
+          "type": "file",
+          "size_bytes": 264,
+          "est_tokens": 66,
+          "category": "other"
+        },
+        {
+          "name": "vite.config.ts",
+          "path": "PromptBuilder/vite.config.ts",
+          "type": "file",
+          "size_bytes": 293,
+          "est_tokens": 74,
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "name": "scripts",
+      "path": "scripts",
+      "type": "directory",
+      "size_bytes": 17359,
+      "est_tokens": 4340,
+      "children": [
+        {
+          "name": "archive_memory.py",
+          "path": "scripts/archive_memory.py",
+          "type": "file",
+          "size_bytes": 2053,
+          "est_tokens": 514,
+          "category": "other"
+        },
+        {
+          "name": "build_token_dataset.py",
+          "path": "scripts/build_token_dataset.py",
+          "type": "file",
+          "size_bytes": 11792,
+          "est_tokens": 2948,
+          "category": "other"
+        },
+        {
+          "name": "run_cron_agent.py",
+          "path": "scripts/run_cron_agent.py",
+          "type": "file",
+          "size_bytes": 3514,
+          "est_tokens": 879,
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "name": "SOUL.md",
+      "path": "SOUL.md",
+      "type": "file",
+      "size_bytes": 1673,
+      "est_tokens": 419,
+      "category": "doc"
+    },
+    {
+      "name": "stock-report-site",
+      "path": "stock-report-site",
+      "type": "directory",
+      "size_bytes": 53328,
+      "est_tokens": 13332,
+      "children": [
+        {
+          "name": "inbox",
+          "path": "stock-report-site/inbox",
+          "type": "directory",
+          "size_bytes": 160,
+          "est_tokens": 40,
+          "children": [
+            {
+              "name": "email-template.html",
+              "path": "stock-report-site/inbox/email-template.html",
+              "type": "file",
+              "size_bytes": 160,
+              "est_tokens": 40,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "logs",
+          "path": "stock-report-site/logs",
+          "type": "directory",
+          "size_bytes": 53168,
+          "est_tokens": 13292,
+          "children": [
+            {
+              "name": "email.err.log",
+              "path": "stock-report-site/logs/email.err.log",
+              "type": "file",
+              "size_bytes": 2498,
+              "est_tokens": 625,
+              "category": "other"
+            },
+            {
+              "name": "email.out.log",
+              "path": "stock-report-site/logs/email.out.log",
+              "type": "file",
+              "size_bytes": 560,
+              "est_tokens": 140,
+              "category": "other"
+            },
+            {
+              "name": "line-commands.err.log",
+              "path": "stock-report-site/logs/line-commands.err.log",
+              "type": "file",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "category": "other"
+            },
+            {
+              "name": "line-commands.out.log",
+              "path": "stock-report-site/logs/line-commands.out.log",
+              "type": "file",
+              "size_bytes": 46217,
+              "est_tokens": 11555,
+              "category": "other"
+            },
+            {
+              "name": "stockreport.err.log",
+              "path": "stock-report-site/logs/stockreport.err.log",
+              "type": "file",
+              "size_bytes": 371,
+              "est_tokens": 93,
+              "category": "other"
+            },
+            {
+              "name": "stockreport.out.log",
+              "path": "stock-report-site/logs/stockreport.out.log",
+              "type": "file",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "category": "other"
+            },
+            {
+              "name": "tw-brief.err.log",
+              "path": "stock-report-site/logs/tw-brief.err.log",
+              "type": "file",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "category": "other"
+            },
+            {
+              "name": "tw-brief.out.log",
+              "path": "stock-report-site/logs/tw-brief.out.log",
+              "type": "file",
+              "size_bytes": 647,
+              "est_tokens": 162,
+              "category": "other"
+            },
+            {
+              "name": "us-brief.err.log",
+              "path": "stock-report-site/logs/us-brief.err.log",
+              "type": "file",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "category": "other"
+            },
+            {
+              "name": "us-brief.out.log",
+              "path": "stock-report-site/logs/us-brief.out.log",
+              "type": "file",
+              "size_bytes": 525,
+              "est_tokens": 132,
+              "category": "other"
+            },
+            {
+              "name": "us-email.err.log",
+              "path": "stock-report-site/logs/us-email.err.log",
+              "type": "file",
+              "size_bytes": 2122,
+              "est_tokens": 531,
+              "category": "other"
+            },
+            {
+              "name": "us-email.out.log",
+              "path": "stock-report-site/logs/us-email.out.log",
+              "type": "file",
+              "size_bytes": 228,
+              "est_tokens": 57,
+              "category": "other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stock-report-site-repo",
+      "path": "stock-report-site-repo",
+      "type": "directory",
+      "size_bytes": 10711735,
+      "est_tokens": 2677934,
+      "children": [
+        {
+          "name": ".github",
+          "path": "stock-report-site-repo/.github",
+          "type": "directory",
+          "size_bytes": 8643,
+          "est_tokens": 2161,
+          "children": [
+            {
+              "name": "workflows",
+              "path": "stock-report-site-repo/.github/workflows",
+              "type": "directory",
+              "size_bytes": 8643,
+              "est_tokens": 2161,
+              "children": [
+                {
+                  "name": "interesting-stories-schedule.yml",
+                  "path": "stock-report-site-repo/.github/workflows/interesting-stories-schedule.yml",
+                  "type": "file",
+                  "size_bytes": 1045,
+                  "est_tokens": 262,
+                  "category": "other"
+                },
+                {
+                  "name": "stock-report-pages.yml",
+                  "path": "stock-report-site-repo/.github/workflows/stock-report-pages.yml",
+                  "type": "file",
+                  "size_bytes": 7598,
+                  "est_tokens": 1900,
+                  "category": "other"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "btc-hourly-site",
+          "path": "stock-report-site-repo/btc-hourly-site",
+          "type": "directory",
+          "size_bytes": 18083,
+          "est_tokens": 4521,
+          "children": [
+            {
+              "name": "data",
+              "path": "stock-report-site-repo/btc-hourly-site/data",
+              "type": "directory",
+              "size_bytes": 7876,
+              "est_tokens": 1969,
+              "children": [
+                {
+                  "name": "latest.json",
+                  "path": "stock-report-site-repo/btc-hourly-site/data/latest.json",
+                  "type": "file",
+                  "size_bytes": 7876,
+                  "est_tokens": 1969,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "public",
+              "path": "stock-report-site-repo/btc-hourly-site/public",
+              "type": "directory",
+              "size_bytes": 7265,
+              "est_tokens": 1817,
+              "children": [
+                {
+                  "name": "index.html",
+                  "path": "stock-report-site-repo/btc-hourly-site/public/index.html",
+                  "type": "file",
+                  "size_bytes": 7265,
+                  "est_tokens": 1817,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "README.md",
+              "path": "stock-report-site-repo/btc-hourly-site/README.md",
+              "type": "file",
+              "size_bytes": 349,
+              "est_tokens": 88,
+              "category": "doc"
+            },
+            {
+              "name": "scripts",
+              "path": "stock-report-site-repo/btc-hourly-site/scripts",
+              "type": "directory",
+              "size_bytes": 2593,
+              "est_tokens": 649,
+              "children": [
+                {
+                  "name": "update_btc_report.py",
+                  "path": "stock-report-site-repo/btc-hourly-site/scripts/update_btc_report.py",
+                  "type": "file",
+                  "size_bytes": 2593,
+                  "est_tokens": 649,
+                  "category": "other"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cloudflare-chat-worker",
+          "path": "stock-report-site-repo/cloudflare-chat-worker",
+          "type": "directory",
+          "size_bytes": 17259,
+          "est_tokens": 4315,
+          "children": [
+            {
+              "name": ".wrangler",
+              "path": "stock-report-site-repo/cloudflare-chat-worker/.wrangler",
+              "type": "directory",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "children": [
+                {
+                  "name": "tmp",
+                  "path": "stock-report-site-repo/cloudflare-chat-worker/.wrangler/tmp",
+                  "type": "directory",
+                  "size_bytes": 0,
+                  "est_tokens": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "README.md",
+              "path": "stock-report-site-repo/cloudflare-chat-worker/README.md",
+              "type": "file",
+              "size_bytes": 982,
+              "est_tokens": 246,
+              "category": "doc"
+            },
+            {
+              "name": "src",
+              "path": "stock-report-site-repo/cloudflare-chat-worker/src",
+              "type": "directory",
+              "size_bytes": 16100,
+              "est_tokens": 4025,
+              "children": [
+                {
+                  "name": "index.js",
+                  "path": "stock-report-site-repo/cloudflare-chat-worker/src/index.js",
+                  "type": "file",
+                  "size_bytes": 16100,
+                  "est_tokens": 4025,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "wrangler.toml",
+              "path": "stock-report-site-repo/cloudflare-chat-worker/wrangler.toml",
+              "type": "file",
+              "size_bytes": 177,
+              "est_tokens": 45,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "cloudflare-forum-worker",
+          "path": "stock-report-site-repo/cloudflare-forum-worker",
+          "type": "directory",
+          "size_bytes": 6549,
+          "est_tokens": 1638,
+          "children": [
+            {
+              "name": "README.md",
+              "path": "stock-report-site-repo/cloudflare-forum-worker/README.md",
+              "type": "file",
+              "size_bytes": 478,
+              "est_tokens": 120,
+              "category": "doc"
+            },
+            {
+              "name": "src",
+              "path": "stock-report-site-repo/cloudflare-forum-worker/src",
+              "type": "directory",
+              "size_bytes": 5910,
+              "est_tokens": 1478,
+              "children": [
+                {
+                  "name": "index.js",
+                  "path": "stock-report-site-repo/cloudflare-forum-worker/src/index.js",
+                  "type": "file",
+                  "size_bytes": 5910,
+                  "est_tokens": 1478,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "wrangler.toml",
+              "path": "stock-report-site-repo/cloudflare-forum-worker/wrangler.toml",
+              "type": "file",
+              "size_bytes": 161,
+              "est_tokens": 41,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "crm-system",
+          "path": "stock-report-site-repo/crm-system",
+          "type": "directory",
+          "size_bytes": 30293,
+          "est_tokens": 7574,
+          "children": [
+            {
+              "name": ".gitignore",
+              "path": "stock-report-site-repo/crm-system/.gitignore",
+              "type": "file",
+              "size_bytes": 33,
+              "est_tokens": 9,
+              "category": "other"
+            },
+            {
+              "name": "app.py",
+              "path": "stock-report-site-repo/crm-system/app.py",
+              "type": "file",
+              "size_bytes": 15366,
+              "est_tokens": 3842,
+              "category": "other"
+            },
+            {
+              "name": "gunicorn.conf.py",
+              "path": "stock-report-site-repo/crm-system/gunicorn.conf.py",
+              "type": "file",
+              "size_bytes": 90,
+              "est_tokens": 23,
+              "category": "other"
+            },
+            {
+              "name": "local.crm-system.plist",
+              "path": "stock-report-site-repo/crm-system/local.crm-system.plist",
+              "type": "file",
+              "size_bytes": 962,
+              "est_tokens": 241,
+              "category": "other"
+            },
+            {
+              "name": "README.md",
+              "path": "stock-report-site-repo/crm-system/README.md",
+              "type": "file",
+              "size_bytes": 2683,
+              "est_tokens": 671,
+              "category": "doc"
+            },
+            {
+              "name": "requirements.txt",
+              "path": "stock-report-site-repo/crm-system/requirements.txt",
+              "type": "file",
+              "size_bytes": 29,
+              "est_tokens": 8,
+              "category": "other"
+            },
+            {
+              "name": "static",
+              "path": "stock-report-site-repo/crm-system/static",
+              "type": "directory",
+              "size_bytes": 1551,
+              "est_tokens": 388,
+              "children": [
+                {
+                  "name": "style.css",
+                  "path": "stock-report-site-repo/crm-system/static/style.css",
+                  "type": "file",
+                  "size_bytes": 1551,
+                  "est_tokens": 388,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "templates",
+              "path": "stock-report-site-repo/crm-system/templates",
+              "type": "directory",
+              "size_bytes": 9526,
+              "est_tokens": 2382,
+              "children": [
+                {
+                  "name": "base.html",
+                  "path": "stock-report-site-repo/crm-system/templates/base.html",
+                  "type": "file",
+                  "size_bytes": 1235,
+                  "est_tokens": 309,
+                  "category": "other"
+                },
+                {
+                  "name": "companies.html",
+                  "path": "stock-report-site-repo/crm-system/templates/companies.html",
+                  "type": "file",
+                  "size_bytes": 1296,
+                  "est_tokens": 324,
+                  "category": "other"
+                },
+                {
+                  "name": "customers.html",
+                  "path": "stock-report-site-repo/crm-system/templates/customers.html",
+                  "type": "file",
+                  "size_bytes": 1196,
+                  "est_tokens": 299,
+                  "category": "other"
+                },
+                {
+                  "name": "dashboard.html",
+                  "path": "stock-report-site-repo/crm-system/templates/dashboard.html",
+                  "type": "file",
+                  "size_bytes": 1027,
+                  "est_tokens": 257,
+                  "category": "other"
+                },
+                {
+                  "name": "login.html",
+                  "path": "stock-report-site-repo/crm-system/templates/login.html",
+                  "type": "file",
+                  "size_bytes": 483,
+                  "est_tokens": 121,
+                  "category": "other"
+                },
+                {
+                  "name": "register.html",
+                  "path": "stock-report-site-repo/crm-system/templates/register.html",
+                  "type": "file",
+                  "size_bytes": 646,
+                  "est_tokens": 162,
+                  "category": "other"
+                },
+                {
+                  "name": "reports.html",
+                  "path": "stock-report-site-repo/crm-system/templates/reports.html",
+                  "type": "file",
+                  "size_bytes": 1054,
+                  "est_tokens": 264,
+                  "category": "other"
+                },
+                {
+                  "name": "ticket_detail.html",
+                  "path": "stock-report-site-repo/crm-system/templates/ticket_detail.html",
+                  "type": "file",
+                  "size_bytes": 1367,
+                  "est_tokens": 342,
+                  "category": "other"
+                },
+                {
+                  "name": "tickets.html",
+                  "path": "stock-report-site-repo/crm-system/templates/tickets.html",
+                  "type": "file",
+                  "size_bytes": 1222,
+                  "est_tokens": 306,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "wsgi.py",
+              "path": "stock-report-site-repo/crm-system/wsgi.py",
+              "type": "file",
+              "size_bytes": 53,
+              "est_tokens": 14,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "health-triage",
+          "path": "stock-report-site-repo/health-triage",
+          "type": "directory",
+          "size_bytes": 22476,
+          "est_tokens": 5619,
+          "children": [
+            {
+              "name": "engine",
+              "path": "stock-report-site-repo/health-triage/engine",
+              "type": "directory",
+              "size_bytes": 9992,
+              "est_tokens": 2498,
+              "children": [
+                {
+                  "name": "ruleEngine.js",
+                  "path": "stock-report-site-repo/health-triage/engine/ruleEngine.js",
+                  "type": "file",
+                  "size_bytes": 9992,
+                  "est_tokens": 2498,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "package.json",
+              "path": "stock-report-site-repo/health-triage/package.json",
+              "type": "file",
+              "size_bytes": 197,
+              "est_tokens": 50,
+              "category": "other"
+            },
+            {
+              "name": "rules",
+              "path": "stock-report-site-repo/health-triage/rules",
+              "type": "directory",
+              "size_bytes": 10798,
+              "est_tokens": 2700,
+              "children": [
+                {
+                  "name": "comorbidity_options.json",
+                  "path": "stock-report-site-repo/health-triage/rules/comorbidity_options.json",
+                  "type": "file",
+                  "size_bytes": 694,
+                  "est_tokens": 174,
+                  "category": "other"
+                },
+                {
+                  "name": "department_map.json",
+                  "path": "stock-report-site-repo/health-triage/rules/department_map.json",
+                  "type": "file",
+                  "size_bytes": 536,
+                  "est_tokens": 134,
+                  "category": "other"
+                },
+                {
+                  "name": "diet_tags.json",
+                  "path": "stock-report-site-repo/health-triage/rules/diet_tags.json",
+                  "type": "file",
+                  "size_bytes": 1376,
+                  "est_tokens": 344,
+                  "category": "other"
+                },
+                {
+                  "name": "rules.json",
+                  "path": "stock-report-site-repo/health-triage/rules/rules.json",
+                  "type": "file",
+                  "size_bytes": 6366,
+                  "est_tokens": 1592,
+                  "category": "other"
+                },
+                {
+                  "name": "symptom_options.json",
+                  "path": "stock-report-site-repo/health-triage/rules/symptom_options.json",
+                  "type": "file",
+                  "size_bytes": 1269,
+                  "est_tokens": 318,
+                  "category": "other"
+                },
+                {
+                  "name": "vitals_options.json",
+                  "path": "stock-report-site-repo/health-triage/rules/vitals_options.json",
+                  "type": "file",
+                  "size_bytes": 557,
+                  "est_tokens": 140,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "server.js",
+              "path": "stock-report-site-repo/health-triage/server.js",
+              "type": "file",
+              "size_bytes": 1489,
+              "est_tokens": 373,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "line-webhook-worker",
+          "path": "stock-report-site-repo/line-webhook-worker",
+          "type": "directory",
+          "size_bytes": 8298,
+          "est_tokens": 2075,
+          "children": [
+            {
+              "name": ".wrangler",
+              "path": "stock-report-site-repo/line-webhook-worker/.wrangler",
+              "type": "directory",
+              "size_bytes": 0,
+              "est_tokens": 0,
+              "children": [
+                {
+                  "name": "tmp",
+                  "path": "stock-report-site-repo/line-webhook-worker/.wrangler/tmp",
+                  "type": "directory",
+                  "size_bytes": 0,
+                  "est_tokens": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "src",
+              "path": "stock-report-site-repo/line-webhook-worker/src",
+              "type": "directory",
+              "size_bytes": 8052,
+              "est_tokens": 2013,
+              "children": [
+                {
+                  "name": "index.js",
+                  "path": "stock-report-site-repo/line-webhook-worker/src/index.js",
+                  "type": "file",
+                  "size_bytes": 8052,
+                  "est_tokens": 2013,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "wrangler.toml",
+              "path": "stock-report-site-repo/line-webhook-worker/wrangler.toml",
+              "type": "file",
+              "size_bytes": 246,
+              "est_tokens": 62,
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "name": "memory",
+          "path": "stock-report-site-repo/memory",
+          "type": "directory",
+          "size_bytes": 1468,
+          "est_tokens": 367,
+          "children": [
+            {
+              "name": "2026-02-28.md",
+              "path": "stock-report-site-repo/memory/2026-02-28.md",
+              "type": "file",
+              "size_bytes": 1468,
+              "est_tokens": 367,
+              "category": "doc"
+            }
+          ]
+        },
+        {
+          "name": "stock-report-site",
+          "path": "stock-report-site-repo/stock-report-site",
+          "type": "directory",
+          "size_bytes": 10598666,
+          "est_tokens": 2649667,
+          "children": [
+            {
+              "name": ".env",
+              "path": "stock-report-site-repo/stock-report-site/.env",
+              "type": "file",
+              "size_bytes": 314,
+              "est_tokens": 79,
+              "category": "other"
+            },
+            {
+              "name": ".env.example",
+              "path": "stock-report-site-repo/stock-report-site/.env.example",
+              "type": "file",
+              "size_bytes": 259,
+              "est_tokens": 65,
+              "category": "other"
+            },
+            {
+              "name": ".gitignore",
+              "path": "stock-report-site-repo/stock-report-site/.gitignore",
+              "type": "file",
+              "size_bytes": 12,
+              "est_tokens": 3,
+              "category": "other"
+            },
+            {
+              "name": "com.william.linecommands.plist",
+              "path": "stock-report-site-repo/stock-report-site/com.william.linecommands.plist",
+              "type": "file",
+              "size_bytes": 877,
+              "est_tokens": 220,
+              "category": "other"
+            },
+            {
+              "name": "com.william.stockreport.email.plist",
+              "path": "stock-report-site-repo/stock-report-site/com.william.stockreport.email.plist",
+              "type": "file",
+              "size_bytes": 1519,
+              "est_tokens": 380,
+              "category": "other"
+            },
+            {
+              "name": "com.william.stockreport.plist",
+              "path": "stock-report-site-repo/stock-report-site/com.william.stockreport.plist",
+              "type": "file",
+              "size_bytes": 13240,
+              "est_tokens": 3310,
+              "category": "other"
+            },
+            {
+              "name": "com.william.twbrief.line.plist",
+              "path": "stock-report-site-repo/stock-report-site/com.william.twbrief.line.plist",
+              "type": "file",
+              "size_bytes": 1517,
+              "est_tokens": 380,
+              "category": "other"
+            },
+            {
+              "name": "com.william.usbrief.line.plist",
+              "path": "stock-report-site-repo/stock-report-site/com.william.usbrief.line.plist",
+              "type": "file",
+              "size_bytes": 1512,
+              "est_tokens": 378,
+              "category": "other"
+            },
+            {
+              "name": "com.william.usstock.email.plist",
+              "path": "stock-report-site-repo/stock-report-site/com.william.usstock.email.plist",
+              "type": "file",
+              "size_bytes": 1508,
+              "est_tokens": 377,
+              "category": "other"
+            },
+            {
+              "name": "data",
+              "path": "stock-report-site-repo/stock-report-site/data",
+              "type": "directory",
+              "size_bytes": 54878,
+              "est_tokens": 13720,
+              "children": [
+                {
+                  "name": "coffee_news.json",
+                  "path": "stock-report-site-repo/stock-report-site/data/coffee_news.json",
+                  "type": "file",
+                  "size_bytes": 12759,
+                  "est_tokens": 3190,
+                  "category": "other"
+                },
+                {
+                  "name": "interesting_stories.json",
+                  "path": "stock-report-site-repo/stock-report-site/data/interesting_stories.json",
+                  "type": "file",
+                  "size_bytes": 10515,
+                  "est_tokens": 2629,
+                  "category": "other"
+                },
+                {
+                  "name": "latest.json",
+                  "path": "stock-report-site-repo/stock-report-site/data/latest.json",
+                  "type": "file",
+                  "size_bytes": 9463,
+                  "est_tokens": 2366,
+                  "category": "other"
+                },
+                {
+                  "name": "tw_news.json",
+                  "path": "stock-report-site-repo/stock-report-site/data/tw_news.json",
+                  "type": "file",
+                  "size_bytes": 1595,
+                  "est_tokens": 399,
+                  "category": "other"
+                },
+                {
+                  "name": "us_latest.json",
+                  "path": "stock-report-site-repo/stock-report-site/data/us_latest.json",
+                  "type": "file",
+                  "size_bytes": 17874,
+                  "est_tokens": 4469,
+                  "category": "other"
+                },
+                {
+                  "name": "us_news.json",
+                  "path": "stock-report-site-repo/stock-report-site/data/us_news.json",
+                  "type": "file",
+                  "size_bytes": 2672,
+                  "est_tokens": 668,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "forum-system",
+              "path": "stock-report-site-repo/stock-report-site/forum-system",
+              "type": "directory",
+              "size_bytes": 108154,
+              "est_tokens": 27039,
+              "children": [
+                {
+                  "name": "api",
+                  "path": "stock-report-site-repo/stock-report-site/forum-system/api",
+                  "type": "directory",
+                  "size_bytes": 98755,
+                  "est_tokens": 24689,
+                  "children": [
+                    {
+                      "name": ".env.example",
+                      "path": "stock-report-site-repo/stock-report-site/forum-system/api/.env.example",
+                      "type": "file",
+                      "size_bytes": 316,
+                      "est_tokens": 79,
+                      "category": "other"
+                    },
+                    {
+                      "name": "package-lock.json",
+                      "path": "stock-report-site-repo/stock-report-site/forum-system/api/package-lock.json",
+                      "type": "file",
+                      "size_bytes": 81077,
+                      "est_tokens": 20270,
+                      "category": "other"
+                    },
+                    {
+                      "name": "package.json",
+                      "path": "stock-report-site-repo/stock-report-site/forum-system/api/package.json",
+                      "type": "file",
+                      "size_bytes": 555,
+                      "est_tokens": 139,
+                      "category": "other"
+                    },
+                    {
+                      "name": "src",
+                      "path": "stock-report-site-repo/stock-report-site/forum-system/api/src",
+                      "type": "directory",
+                      "size_bytes": 16807,
+                      "est_tokens": 4202,
+                      "children": [
+                        {
+                          "name": "config.js",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/config.js",
+                          "type": "file",
+                          "size_bytes": 545,
+                          "est_tokens": 137,
+                          "category": "other"
+                        },
+                        {
+                          "name": "db.js",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/db.js",
+                          "type": "file",
+                          "size_bytes": 236,
+                          "est_tokens": 59,
+                          "category": "other"
+                        },
+                        {
+                          "name": "middleware",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/middleware",
+                          "type": "directory",
+                          "size_bytes": 1687,
+                          "est_tokens": 422,
+                          "children": [
+                            {
+                              "name": "auth.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/middleware/auth.js",
+                              "type": "file",
+                              "size_bytes": 858,
+                              "est_tokens": 215,
+                              "category": "other"
+                            },
+                            {
+                              "name": "rateLimit.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/middleware/rateLimit.js",
+                              "type": "file",
+                              "size_bytes": 829,
+                              "est_tokens": 208,
+                              "category": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "routes",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/routes",
+                          "type": "directory",
+                          "size_bytes": 9475,
+                          "est_tokens": 2369,
+                          "children": [
+                            {
+                              "name": "admin.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/routes/admin.js",
+                              "type": "file",
+                              "size_bytes": 978,
+                              "est_tokens": 245,
+                              "category": "other"
+                            },
+                            {
+                              "name": "auth.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/routes/auth.js",
+                              "type": "file",
+                              "size_bytes": 3416,
+                              "est_tokens": 854,
+                              "category": "other"
+                            },
+                            {
+                              "name": "forum.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/routes/forum.js",
+                              "type": "file",
+                              "size_bytes": 3805,
+                              "est_tokens": 952,
+                              "category": "other"
+                            },
+                            {
+                              "name": "mod.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/routes/mod.js",
+                              "type": "file",
+                              "size_bytes": 1276,
+                              "est_tokens": 319,
+                              "category": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "server.js",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/server.js",
+                          "type": "file",
+                          "size_bytes": 967,
+                          "est_tokens": 242,
+                          "category": "other"
+                        },
+                        {
+                          "name": "services",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/services",
+                          "type": "directory",
+                          "size_bytes": 1260,
+                          "est_tokens": 315,
+                          "children": [
+                            {
+                              "name": "modQueue.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/services/modQueue.js",
+                              "type": "file",
+                              "size_bytes": 451,
+                              "est_tokens": 113,
+                              "category": "other"
+                            },
+                            {
+                              "name": "trust.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/services/trust.js",
+                              "type": "file",
+                              "size_bytes": 809,
+                              "est_tokens": 203,
+                              "category": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "utils",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/utils",
+                          "type": "directory",
+                          "size_bytes": 1503,
+                          "est_tokens": 376,
+                          "children": [
+                            {
+                              "name": "permissions.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/utils/permissions.js",
+                              "type": "file",
+                              "size_bytes": 592,
+                              "est_tokens": 148,
+                              "category": "other"
+                            },
+                            {
+                              "name": "sendEmail.js",
+                              "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/utils/sendEmail.js",
+                              "type": "file",
+                              "size_bytes": 911,
+                              "est_tokens": 228,
+                              "category": "other"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "worker.js",
+                          "path": "stock-report-site-repo/stock-report-site/forum-system/api/src/worker.js",
+                          "type": "file",
+                          "size_bytes": 1134,
+                          "est_tokens": 284,
+                          "category": "other"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "docker-compose.yml",
+                  "path": "stock-report-site-repo/stock-report-site/forum-system/docker-compose.yml",
+                  "type": "file",
+                  "size_bytes": 981,
+                  "est_tokens": 246,
+                  "category": "other"
+                },
+                {
+                  "name": "README.md",
+                  "path": "stock-report-site-repo/stock-report-site/forum-system/README.md",
+                  "type": "file",
+                  "size_bytes": 4547,
+                  "est_tokens": 1137,
+                  "category": "doc"
+                },
+                {
+                  "name": "schema.sql",
+                  "path": "stock-report-site-repo/stock-report-site/forum-system/schema.sql",
+                  "type": "file",
+                  "size_bytes": 3439,
+                  "est_tokens": 860,
+                  "category": "other"
+                },
+                {
+                  "name": "seed.sql",
+                  "path": "stock-report-site-repo/stock-report-site/forum-system/seed.sql",
+                  "type": "file",
+                  "size_bytes": 432,
+                  "est_tokens": 108,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "public",
+              "path": "stock-report-site-repo/stock-report-site/public",
+              "type": "directory",
+              "size_bytes": 10352269,
+              "est_tokens": 2588068,
+              "children": [
+                {
+                  "name": "ai-studio",
+                  "path": "stock-report-site-repo/stock-report-site/public/ai-studio",
+                  "type": "directory",
+                  "size_bytes": 3007519,
+                  "est_tokens": 751880,
+                  "children": [
+                    {
+                      "name": "gallery",
+                      "path": "stock-report-site-repo/stock-report-site/public/ai-studio/gallery",
+                      "type": "directory",
+                      "size_bytes": 3001382,
+                      "est_tokens": 750346,
+                      "children": [
+                        {
+                          "name": "001-cinematic-morning-scene-a-stylish-young-.png",
+                          "path": "stock-report-site-repo/stock-report-site/public/ai-studio/gallery/001-cinematic-morning-scene-a-stylish-young-.png",
+                          "type": "file",
+                          "size_bytes": 2999994,
+                          "est_tokens": 749999,
+                          "category": "other"
+                        },
+                        {
+                          "name": "index.html",
+                          "path": "stock-report-site-repo/stock-report-site/public/ai-studio/gallery/index.html",
+                          "type": "file",
+                          "size_bytes": 1106,
+                          "est_tokens": 277,
+                          "category": "other"
+                        },
+                        {
+                          "name": "prompts.json",
+                          "path": "stock-report-site-repo/stock-report-site/public/ai-studio/gallery/prompts.json",
+                          "type": "file",
+                          "size_bytes": 282,
+                          "est_tokens": 71,
+                          "category": "other"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/ai-studio/index.html",
+                      "type": "file",
+                      "size_bytes": 6137,
+                      "est_tokens": 1535,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "aicrm",
+                  "path": "stock-report-site-repo/stock-report-site/public/aicrm",
+                  "type": "directory",
+                  "size_bytes": 2878,
+                  "est_tokens": 720,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/aicrm/index.html",
+                      "type": "file",
+                      "size_bytes": 2878,
+                      "est_tokens": 720,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "assets",
+                  "path": "stock-report-site-repo/stock-report-site/public/assets",
+                  "type": "directory",
+                  "size_bytes": 6903477,
+                  "est_tokens": 1725870,
+                  "children": [
+                    {
+                      "name": "29426c5a-abb5-4d14-a7bf-e62826af79d9.png",
+                      "path": "stock-report-site-repo/stock-report-site/public/assets/29426c5a-abb5-4d14-a7bf-e62826af79d9.png",
+                      "type": "file",
+                      "size_bytes": 2087918,
+                      "est_tokens": 521980,
+                      "category": "other"
+                    },
+                    {
+                      "name": "hero.jpg",
+                      "path": "stock-report-site-repo/stock-report-site/public/assets/hero.jpg",
+                      "type": "file",
+                      "size_bytes": 121692,
+                      "est_tokens": 30423,
+                      "category": "other"
+                    },
+                    {
+                      "name": "line-qr.png",
+                      "path": "stock-report-site-repo/stock-report-site/public/assets/line-qr.png",
+                      "type": "file",
+                      "size_bytes": 5942,
+                      "est_tokens": 1486,
+                      "category": "other"
+                    },
+                    {
+                      "name": "name-analysis-hero.png",
+                      "path": "stock-report-site-repo/stock-report-site/public/assets/name-analysis-hero.png",
+                      "type": "file",
+                      "size_bytes": 2087918,
+                      "est_tokens": 521980,
+                      "category": "other"
+                    },
+                    {
+                      "name": "ziweidoushu-hero.png",
+                      "path": "stock-report-site-repo/stock-report-site/public/assets/ziweidoushu-hero.png",
+                      "type": "file",
+                      "size_bytes": 2600007,
+                      "est_tokens": 650002,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "btc-hourly",
+                  "path": "stock-report-site-repo/stock-report-site/public/btc-hourly",
+                  "type": "directory",
+                  "size_bytes": 7091,
+                  "est_tokens": 1773,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/btc-hourly/index.html",
+                      "type": "file",
+                      "size_bytes": 7091,
+                      "est_tokens": 1773,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "btc-hourly.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/btc-hourly.html",
+                  "type": "file",
+                  "size_bytes": 7867,
+                  "est_tokens": 1967,
+                  "category": "other"
+                },
+                {
+                  "name": "chat",
+                  "path": "stock-report-site-repo/stock-report-site/public/chat",
+                  "type": "directory",
+                  "size_bytes": 20430,
+                  "est_tokens": 5108,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/chat/index.html",
+                      "type": "file",
+                      "size_bytes": 20430,
+                      "est_tokens": 5108,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "CNAME",
+                  "path": "stock-report-site-repo/stock-report-site/public/CNAME",
+                  "type": "file",
+                  "size_bytes": 14,
+                  "est_tokens": 4,
+                  "category": "other"
+                },
+                {
+                  "name": "coffee-news",
+                  "path": "stock-report-site-repo/stock-report-site/public/coffee-news",
+                  "type": "directory",
+                  "size_bytes": 5095,
+                  "est_tokens": 1274,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/coffee-news/index.html",
+                      "type": "file",
+                      "size_bytes": 5095,
+                      "est_tokens": 1274,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "coffee-news.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/coffee-news.html",
+                  "type": "file",
+                  "size_bytes": 6268,
+                  "est_tokens": 1567,
+                  "category": "other"
+                },
+                {
+                  "name": "data",
+                  "path": "stock-report-site-repo/stock-report-site/public/data",
+                  "type": "directory",
+                  "size_bytes": 11323,
+                  "est_tokens": 2831,
+                  "children": [
+                    {
+                      "name": "health-comorb-config.zh-TW.json",
+                      "path": "stock-report-site-repo/stock-report-site/public/data/health-comorb-config.zh-TW.json",
+                      "type": "file",
+                      "size_bytes": 694,
+                      "est_tokens": 174,
+                      "category": "other"
+                    },
+                    {
+                      "name": "health-form-config.zh-TW.json",
+                      "path": "stock-report-site-repo/stock-report-site/public/data/health-form-config.zh-TW.json",
+                      "type": "file",
+                      "size_bytes": 5999,
+                      "est_tokens": 1500,
+                      "category": "other"
+                    },
+                    {
+                      "name": "health-rules-template.json",
+                      "path": "stock-report-site-repo/stock-report-site/public/data/health-rules-template.json",
+                      "type": "file",
+                      "size_bytes": 4073,
+                      "est_tokens": 1019,
+                      "category": "other"
+                    },
+                    {
+                      "name": "health-vitals-config.zh-TW.json",
+                      "path": "stock-report-site-repo/stock-report-site/public/data/health-vitals-config.zh-TW.json",
+                      "type": "file",
+                      "size_bytes": 557,
+                      "est_tokens": 140,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "forum.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/forum.html",
+                  "type": "file",
+                  "size_bytes": 13099,
+                  "est_tokens": 3275,
+                  "category": "other"
+                },
+                {
+                  "name": "guestbook.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/guestbook.html",
+                  "type": "file",
+                  "size_bytes": 16113,
+                  "est_tokens": 4029,
+                  "category": "other"
+                },
+                {
+                  "name": "health-triage.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/health-triage.html",
+                  "type": "file",
+                  "size_bytes": 21805,
+                  "est_tokens": 5452,
+                  "category": "other"
+                },
+                {
+                  "name": "index.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/index.html",
+                  "type": "file",
+                  "size_bytes": 16116,
+                  "est_tokens": 4029,
+                  "category": "other"
+                },
+                {
+                  "name": "interesting-stories",
+                  "path": "stock-report-site-repo/stock-report-site/public/interesting-stories",
+                  "type": "directory",
+                  "size_bytes": 4826,
+                  "est_tokens": 1207,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/interesting-stories/index.html",
+                      "type": "file",
+                      "size_bytes": 4826,
+                      "est_tokens": 1207,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "interesting-stories.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/interesting-stories.html",
+                  "type": "file",
+                  "size_bytes": 6226,
+                  "est_tokens": 1557,
+                  "category": "other"
+                },
+                {
+                  "name": "music.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/music.html",
+                  "type": "file",
+                  "size_bytes": 3402,
+                  "est_tokens": 851,
+                  "category": "other"
+                },
+                {
+                  "name": "name-analysis.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/name-analysis.html",
+                  "type": "file",
+                  "size_bytes": 10461,
+                  "est_tokens": 2616,
+                  "category": "other"
+                },
+                {
+                  "name": "podcast",
+                  "path": "stock-report-site-repo/stock-report-site/public/podcast",
+                  "type": "directory",
+                  "size_bytes": 3257,
+                  "est_tokens": 815,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/podcast/index.html",
+                      "type": "file",
+                      "size_bytes": 3257,
+                      "est_tokens": 815,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "podcast.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/podcast.html",
+                  "type": "file",
+                  "size_bytes": 4192,
+                  "est_tokens": 1048,
+                  "category": "other"
+                },
+                {
+                  "name": "prompt-builder",
+                  "path": "stock-report-site-repo/stock-report-site/public/prompt-builder",
+                  "type": "directory",
+                  "size_bytes": 164871,
+                  "est_tokens": 41218,
+                  "children": [
+                    {
+                      "name": "assets",
+                      "path": "stock-report-site-repo/stock-report-site/public/prompt-builder/assets",
+                      "type": "directory",
+                      "size_bytes": 163924,
+                      "est_tokens": 40981,
+                      "children": [
+                        {
+                          "name": "index-CjjKzmtm.js",
+                          "path": "stock-report-site-repo/stock-report-site/public/prompt-builder/assets/index-CjjKzmtm.js",
+                          "type": "file",
+                          "size_bytes": 159847,
+                          "est_tokens": 39962,
+                          "category": "other"
+                        },
+                        {
+                          "name": "index-d4A5EuVg.css",
+                          "path": "stock-report-site-repo/stock-report-site/public/prompt-builder/assets/index-d4A5EuVg.css",
+                          "type": "file",
+                          "size_bytes": 4077,
+                          "est_tokens": 1020,
+                          "category": "other"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "favicon.svg",
+                      "path": "stock-report-site-repo/stock-report-site/public/prompt-builder/favicon.svg",
+                      "type": "file",
+                      "size_bytes": 439,
+                      "est_tokens": 110,
+                      "category": "other"
+                    },
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/prompt-builder/index.html",
+                      "type": "file",
+                      "size_bytes": 508,
+                      "est_tokens": 127,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "PromptBuilder",
+                  "path": "stock-report-site-repo/stock-report-site/public/PromptBuilder",
+                  "type": "directory",
+                  "size_bytes": 393,
+                  "est_tokens": 99,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/PromptBuilder/index.html",
+                      "type": "file",
+                      "size_bytes": 393,
+                      "est_tokens": 99,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "QR code1.png",
+                  "path": "stock-report-site-repo/stock-report-site/public/QR code1.png",
+                  "type": "file",
+                  "size_bytes": 5942,
+                  "est_tokens": 1486,
+                  "category": "other"
+                },
+                {
+                  "name": "search",
+                  "path": "stock-report-site-repo/stock-report-site/public/search",
+                  "type": "directory",
+                  "size_bytes": 416,
+                  "est_tokens": 104,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/search/index.html",
+                      "type": "file",
+                      "size_bytes": 416,
+                      "est_tokens": 104,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "stock-search.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/stock-search.html",
+                  "type": "file",
+                  "size_bytes": 7666,
+                  "est_tokens": 1917,
+                  "category": "other"
+                },
+                {
+                  "name": "tag-cloud.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/tag-cloud.html",
+                  "type": "file",
+                  "size_bytes": 11793,
+                  "est_tokens": 2949,
+                  "category": "other"
+                },
+                {
+                  "name": "tw",
+                  "path": "stock-report-site-repo/stock-report-site/public/tw",
+                  "type": "directory",
+                  "size_bytes": 10422,
+                  "est_tokens": 2606,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/tw/index.html",
+                      "type": "file",
+                      "size_bytes": 10422,
+                      "est_tokens": 2606,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "tw-news",
+                  "path": "stock-report-site-repo/stock-report-site/public/tw-news",
+                  "type": "directory",
+                  "size_bytes": 5158,
+                  "est_tokens": 1290,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/tw-news/index.html",
+                      "type": "file",
+                      "size_bytes": 5158,
+                      "est_tokens": 1290,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "tw-news.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/tw-news.html",
+                  "type": "file",
+                  "size_bytes": 5934,
+                  "est_tokens": 1484,
+                  "category": "other"
+                },
+                {
+                  "name": "tw.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/tw.html",
+                  "type": "file",
+                  "size_bytes": 10422,
+                  "est_tokens": 2606,
+                  "category": "other"
+                },
+                {
+                  "name": "us",
+                  "path": "stock-report-site-repo/stock-report-site/public/us",
+                  "type": "directory",
+                  "size_bytes": 7753,
+                  "est_tokens": 1939,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/us/index.html",
+                      "type": "file",
+                      "size_bytes": 7753,
+                      "est_tokens": 1939,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "us-news",
+                  "path": "stock-report-site-repo/stock-report-site/public/us-news",
+                  "type": "directory",
+                  "size_bytes": 5154,
+                  "est_tokens": 1289,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/us-news/index.html",
+                      "type": "file",
+                      "size_bytes": 5154,
+                      "est_tokens": 1289,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "us-news.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/us-news.html",
+                  "type": "file",
+                  "size_bytes": 5930,
+                  "est_tokens": 1483,
+                  "category": "other"
+                },
+                {
+                  "name": "us.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/us.html",
+                  "type": "file",
+                  "size_bytes": 7753,
+                  "est_tokens": 1939,
+                  "category": "other"
+                },
+                {
+                  "name": "youtube",
+                  "path": "stock-report-site-repo/stock-report-site/public/youtube",
+                  "type": "directory",
+                  "size_bytes": 3999,
+                  "est_tokens": 1000,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "path": "stock-report-site-repo/stock-report-site/public/youtube/index.html",
+                      "type": "file",
+                      "size_bytes": 3999,
+                      "est_tokens": 1000,
+                      "category": "other"
+                    }
+                  ]
+                },
+                {
+                  "name": "YouTube.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/YouTube.html",
+                  "type": "file",
+                  "size_bytes": 561,
+                  "est_tokens": 141,
+                  "category": "other"
+                },
+                {
+                  "name": "ziweidoushu.html",
+                  "path": "stock-report-site-repo/stock-report-site/public/ziweidoushu.html",
+                  "type": "file",
+                  "size_bytes": 26643,
+                  "est_tokens": 6661,
+                  "category": "other"
+                }
+              ]
+            },
+            {
+              "name": "README.md",
+              "path": "stock-report-site-repo/stock-report-site/README.md",
+              "type": "file",
+              "size_bytes": 4069,
+              "est_tokens": 1018,
+              "category": "doc"
+            },
+            {
+              "name": "requirements.txt",
+              "path": "stock-report-site-repo/stock-report-site/requirements.txt",
+              "type": "file",
+              "size_bytes": 71,
+              "est_tokens": 18,
+              "category": "other"
+            },
+            {
+              "name": "scripts",
+              "path": "stock-report-site-repo/stock-report-site/scripts",
+              "type": "directory",
+              "size_bytes": 58467,
+              "est_tokens": 14617,
+              "children": [
+                {
+                  "name": "line_command_worker.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/line_command_worker.py",
+                  "type": "file",
+                  "size_bytes": 3382,
+                  "est_tokens": 846,
+                  "category": "other"
+                },
+                {
+                  "name": "notify_line.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/notify_line.py",
+                  "type": "file",
+                  "size_bytes": 4291,
+                  "est_tokens": 1073,
+                  "category": "other"
+                },
+                {
+                  "name": "send_daily_email.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/send_daily_email.py",
+                  "type": "file",
+                  "size_bytes": 12691,
+                  "est_tokens": 3173,
+                  "category": "other"
+                },
+                {
+                  "name": "send_tw_brief.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/send_tw_brief.py",
+                  "type": "file",
+                  "size_bytes": 4582,
+                  "est_tokens": 1146,
+                  "category": "other"
+                },
+                {
+                  "name": "send_us_brief.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/send_us_brief.py",
+                  "type": "file",
+                  "size_bytes": 3964,
+                  "est_tokens": 991,
+                  "category": "other"
+                },
+                {
+                  "name": "send_us_email.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/send_us_email.py",
+                  "type": "file",
+                  "size_bytes": 9936,
+                  "est_tokens": 2484,
+                  "category": "other"
+                },
+                {
+                  "name": "update_coffee_news.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/update_coffee_news.py",
+                  "type": "file",
+                  "size_bytes": 3517,
+                  "est_tokens": 880,
+                  "category": "other"
+                },
+                {
+                  "name": "update_interesting_stories.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/update_interesting_stories.py",
+                  "type": "file",
+                  "size_bytes": 4464,
+                  "est_tokens": 1116,
+                  "category": "other"
+                },
+                {
+                  "name": "update_report.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/update_report.py",
+                  "type": "file",
+                  "size_bytes": 3972,
+                  "est_tokens": 993,
+                  "category": "other"
+                },
+                {
+                  "name": "update_tw_news.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/update_tw_news.py",
+                  "type": "file",
+                  "size_bytes": 2475,
+                  "est_tokens": 619,
+                  "category": "other"
+                },
+                {
+                  "name": "update_us_news.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/update_us_news.py",
+                  "type": "file",
+                  "size_bytes": 2467,
+                  "est_tokens": 617,
+                  "category": "other"
+                },
+                {
+                  "name": "update_us_report.py",
+                  "path": "stock-report-site-repo/stock-report-site/scripts/update_us_report.py",
+                  "type": "file",
+                  "size_bytes": 2726,
+                  "est_tokens": 682,
+                  "category": "other"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "token-dashboard",
+      "path": "token-dashboard",
+      "type": "directory",
+      "size_bytes": 13159,
+      "est_tokens": 3290,
+      "children": [
+        {
+          "name": "app.js",
+          "path": "token-dashboard/app.js",
+          "type": "file",
+          "size_bytes": 7122,
+          "est_tokens": 1781,
+          "category": "other"
+        },
+        {
+          "name": "index.html",
+          "path": "token-dashboard/index.html",
+          "type": "file",
+          "size_bytes": 3012,
+          "est_tokens": 753,
+          "category": "other"
+        },
+        {
+          "name": "styles.css",
+          "path": "token-dashboard/styles.css",
+          "type": "file",
+          "size_bytes": 3025,
+          "est_tokens": 757,
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "TOOLS.md",
+      "type": "file",
+      "size_bytes": 860,
+      "est_tokens": 215,
+      "category": "doc"
+    },
+    {
+      "name": "USER.md",
+      "path": "USER.md",
+      "type": "file",
+      "size_bytes": 535,
+      "est_tokens": 134,
+      "category": "doc"
+    },
+    {
+      "name": "video_transcript.txt",
+      "path": "video_transcript.txt",
+      "type": "file",
+      "size_bytes": 3220,
+      "est_tokens": 805,
+      "category": "other"
+    }
+  ]
+}
