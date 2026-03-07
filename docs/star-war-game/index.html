@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Star War Game</title>
+  <style>
+    :root { --bg:#020617; --fg:#e2e8f0; --accent:#22d3ee; --danger:#fb7185; }
+    * { box-sizing: border-box; }
+    body{
+      margin:0; min-height:100vh; display:grid; place-items:center; color:var(--fg);
+      background: radial-gradient(ellipse at bottom, #0b1020 0%, #020617 70%);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    }
+    .wrap{ width:min(100vw,980px); padding:12px; }
+    .hud{ display:flex; justify-content:space-between; gap:12px; margin-bottom:10px; font-weight:600; }
+    .pill{ background:#0f172a; border:1px solid #1e293b; border-radius:999px; padding:6px 12px; }
+    canvas{
+      width:100%; aspect-ratio:16/9; background:#000; border:1px solid #334155;
+      border-radius:12px; box-shadow:0 0 40px rgba(34,211,238,.12);
+    }
+    .help{ margin-top:8px; color:#94a3b8; font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hud">
+      <div class="pill">Score: <span id="score">0</span></div>
+      <div class="pill">Lives: <span id="lives">3</span></div>
+      <div class="pill">Wave: <span id="wave">1</span></div>
+    </div>
+    <canvas id="game" width="960" height="540"></canvas>
+    <div class="help">Move: ← → / A D · Shoot: Space · Restart: R</div>
+  </div>
+
+<script>
+const c = document.getElementById('game');
+const ctx = c.getContext('2d');
+const scoreEl = document.getElementById('score');
+const livesEl = document.getElementById('lives');
+const waveEl = document.getElementById('wave');
+
+const keys = {};
+addEventListener('keydown', e => {
+  keys[e.key.toLowerCase()] = true;
+  if (e.code === 'Space') e.preventDefault();
+  if (e.key.toLowerCase() === 'r') reset();
+});
+addEventListener('keyup', e => keys[e.key.toLowerCase()] = false);
+
+const player = { x: c.width/2, y: c.height-48, w: 42, h: 18, speed: 6, cooldown: 0 };
+let bullets = [], enemies = [], enemyBullets = [], stars = [];
+let score = 0, lives = 3, wave = 1, gameOver = false, frame = 0;
+
+for (let i=0;i<120;i++) stars.push({x:Math.random()*c.width,y:Math.random()*c.height,z:Math.random()*2+0.5});
+
+function spawnWave(){
+  enemies = [];
+  const rows = Math.min(2 + Math.floor(wave/2), 6);
+  const cols = Math.min(6 + wave, 14);
+  const sx = 58, sy = 48;
+  const startX = (c.width - (cols-1)*sx)/2;
+  for (let r=0;r<rows;r++) for (let i=0;i<cols;i++){
+    enemies.push({x:startX+i*sx, y:70+r*sy, w:30, h:18, alive:true, seed:Math.random()*6.28});
+  }
+}
+
+function rectHit(a,b){ return a.x < b.x+b.w && a.x+a.w > b.x && a.y < b.y+b.h && a.y+a.h > b.y; }
+
+function reset(){
+  score=0; lives=3; wave=1; gameOver=false; bullets=[]; enemyBullets=[];
+  player.x=c.width/2; player.cooldown=0; spawnWave(); syncHud();
+}
+function syncHud(){ scoreEl.textContent=score; livesEl.textContent=lives; waveEl.textContent=wave; }
+
+function update(){
+  frame++;
+  for(const s of stars){ s.y += s.z; if(s.y>c.height){ s.y=0; s.x=Math.random()*c.width; } }
+  if(gameOver) return;
+
+  if(keys['arrowleft']||keys['a']) player.x -= player.speed;
+  if(keys['arrowright']||keys['d']) player.x += player.speed;
+  player.x = Math.max(8, Math.min(c.width-player.w-8, player.x));
+
+  if(player.cooldown>0) player.cooldown--;
+  if((keys[' ']||keys['space']) && player.cooldown===0){
+    bullets.push({x:player.x+player.w/2-2, y:player.y-10, w:4, h:12, vy:-9});
+    player.cooldown = 10;
+  }
+
+  bullets.forEach(b => b.y += b.vy);
+  bullets = bullets.filter(b => b.y > -20);
+
+  const drift = Math.sin(frame/80) * 1.2;
+  enemies.forEach(e => {
+    if(!e.alive) return;
+    e.x += drift * 0.35;
+    e.y += Math.sin(frame/50 + e.seed) * 0.08;
+    if(Math.random() < 0.0016 + wave*0.00025){
+      enemyBullets.push({x:e.x+e.w/2-2, y:e.y+e.h+2, w:4, h:10, vy:4+wave*0.2});
+    }
+  });
+
+  enemyBullets.forEach(b => b.y += b.vy);
+  enemyBullets = enemyBullets.filter(b => b.y < c.height + 20);
+
+  for(const b of bullets){
+    for(const e of enemies){
+      if(e.alive && rectHit(b,e)){ e.alive=false; b.y=-999; score += 10; }
+    }
+  }
+
+  const pbox = {x:player.x,y:player.y,w:player.w,h:player.h};
+  for(const eb of enemyBullets){
+    if(rectHit(eb,pbox)){ eb.y = c.height+999; lives--; if(lives<=0) gameOver=true; }
+  }
+
+  if(enemies.some(e => e.alive && e.y+e.h >= player.y-4)) gameOver = true;
+
+  if(enemies.every(e => !e.alive)){
+    wave++; bullets=[]; enemyBullets=[]; spawnWave();
+  }
+
+  syncHud();
+}
+
+function drawShip(x,y,w,h,color='#22d3ee'){
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.moveTo(x+w/2, y);
+  ctx.lineTo(x+w, y+h);
+  ctx.lineTo(x+w*0.62, y+h*0.8);
+  ctx.lineTo(x+w*0.38, y+h*0.8);
+  ctx.lineTo(x, y+h);
+  ctx.closePath();
+  ctx.fill();
+}
+
+function render(){
+  ctx.clearRect(0,0,c.width,c.height);
+
+  for(const s of stars){
+    ctx.fillStyle = `rgba(148,163,184,${0.35 + s.z/3})`;
+    ctx.fillRect(s.x,s.y,s.z,s.z);
+  }
+
+  drawShip(player.x, player.y, player.w, player.h);
+
+  ctx.fillStyle='#f8fafc';
+  bullets.forEach(b => ctx.fillRect(b.x,b.y,b.w,b.h));
+
+  enemies.forEach(e => {
+    if(!e.alive) return;
+    ctx.fillStyle='#fb7185';
+    ctx.fillRect(e.x,e.y,e.w,e.h);
+    ctx.fillStyle='#fecdd3';
+    ctx.fillRect(e.x+5,e.y+4,4,4);
+    ctx.fillRect(e.x+e.w-9,e.y+4,4,4);
+  });
+
+  ctx.fillStyle='#f97316';
+  enemyBullets.forEach(b => ctx.fillRect(b.x,b.y,b.w,b.h));
+
+  if(gameOver){
+    ctx.fillStyle='rgba(2,6,23,.72)';
+    ctx.fillRect(0,0,c.width,c.height);
+    ctx.fillStyle='#fff'; ctx.textAlign='center';
+    ctx.font='bold 56px system-ui'; ctx.fillText('Game Over', c.width/2, c.height/2-20);
+    ctx.font='24px system-ui'; ctx.fillStyle='#cbd5e1'; ctx.fillText(`Final Score: ${score}`, c.width/2, c.height/2+20);
+    ctx.font='18px system-ui'; ctx.fillText('Press R to restart', c.width/2, c.height/2+52);
+  }
+}
+
+function loop(){ update(); render(); requestAnimationFrame(loop); }
+reset(); loop();
+</script>
+</body>
+</html>
