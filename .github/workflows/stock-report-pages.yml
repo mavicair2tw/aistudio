@@ -1,4 +1,4 @@
-name: Stock report (TW 15-min update + GitHub Pages deploy)
+name: Stock report scheduled deploy (TW/US only)
 
 on:
   push:
@@ -8,12 +8,11 @@ on:
       - 'stock-report-site/public/**'
       - 'stock-report-site/data/**'
       - 'stock-report-site/scripts/**'
-      - 'btc-hourly-site/public/**'
-      - 'btc-hourly-site/data/**'
-      - 'btc-hourly-site/scripts/**'
   schedule:
-    # Rebuild all tabs every 15 minutes (UTC)
-    - cron: '*/15 * * * *'
+    # 台北時間平日 14:00 = UTC 平日 06:00
+    - cron: '0 6 * * 1-5'
+    # 台北時間平日＋週六 07:00 = UTC 23:00 (Sun-Fri)
+    - cron: '0 23 * * 0-5'
   workflow_dispatch:
 
 permissions:
@@ -23,7 +22,6 @@ permissions:
 
 jobs:
   build-and-deploy:
-    if: ${{ false }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -42,139 +40,29 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r stock-report-site/requirements.txt
 
-      - name: Generate latest data
+      - name: Generate TW and US latest data
         run: |
           python stock-report-site/scripts/update_report.py
           python stock-report-site/scripts/update_us_report.py
-          python stock-report-site/scripts/update_tw_news.py
-          python stock-report-site/scripts/update_us_news.py
-          python stock-report-site/scripts/update_coffee_news.py
-          python btc-hourly-site/scripts/update_btc_report.py
 
-      - name: Build static site
+      - name: Build static site payload
         run: |
           mkdir -p dist/tw/data
           mkdir -p dist/us/data
-          mkdir -p dist/btc-hourly/data
-          mkdir -p dist/tw-news/data
-          mkdir -p dist/us-news/data
-          mkdir -p dist/interesting-stories/data
-          mkdir -p dist/coffee-news/data
-          mkdir -p dist/podcast
-          mkdir -p dist/chat
-          mkdir -p dist/search
-          mkdir -p dist/guestbook
-          mkdir -p dist/music
-          mkdir -p dist/forum
-          mkdir -p dist/stock-search
-          mkdir -p dist/tag-cloud
-          mkdir -p dist/ziweidoushu
-          mkdir -p dist/name-analysis
-          mkdir -p dist/health-triage
-          mkdir -p dist/health-triage/data
-          mkdir -p dist/assets
-          mkdir -p dist/youtube
-          mkdir -p dist/YouTube
-          mkdir -p dist/ai-studio/gallery
-          mkdir -p dist/aicrm
 
-          # Combined portal (root)
-          cp stock-report-site/public/index.html dist/index.html
-          if [ -f stock-report-site/public/CNAME ]; then
-            cp stock-report-site/public/CNAME dist/CNAME
-          fi
-
-          # TW stock report (tab page)
           cp stock-report-site/public/tw.html dist/tw/index.html
           cp stock-report-site/data/latest.json dist/tw/data/latest.json
 
-          # US stock report (tab page)
           cp stock-report-site/public/us.html dist/us/index.html
           cp stock-report-site/data/us_latest.json dist/us/data/us_latest.json
 
-          # BTC hourly report (tab page)
-          cp btc-hourly-site/public/index.html dist/btc-hourly/index.html
-          cp btc-hourly-site/data/latest.json dist/btc-hourly/data/latest.json
-
-          # TW stock news tag page
-          cp stock-report-site/public/tw-news.html dist/tw-news/index.html
-          cp stock-report-site/data/tw_news.json dist/tw-news/data/tw_news.json
-
-          # US stock news tag page
-          cp stock-report-site/public/us-news.html dist/us-news/index.html
-          cp stock-report-site/data/us_news.json dist/us-news/data/us_news.json
-
-          # Daily interesting stories tag page
-          cp stock-report-site/public/interesting-stories.html dist/interesting-stories/index.html
-          cp stock-report-site/data/interesting_stories.json dist/interesting-stories/data/interesting_stories.json
-
-          # Daily coffee news tag page
-          cp stock-report-site/public/coffee-news.html dist/coffee-news/index.html
-          cp stock-report-site/data/coffee_news.json dist/coffee-news/data/coffee_news.json
-
-          # Podcast tag page
-          cp stock-report-site/public/podcast.html dist/podcast/index.html
-
-          # Chat tag page
-          cp stock-report-site/public/chat/index.html dist/chat/index.html
-          # Backward compatible routes
-          cp stock-report-site/public/search/index.html dist/search/index.html
-          cp stock-report-site/public/chat/index.html dist/guestbook/index.html
-
-          # Music tag page
-          cp stock-report-site/public/music.html dist/music/index.html
-
-          # Forum tag page
-          cp stock-report-site/public/forum.html dist/forum/index.html
-
-          # Stock search tag page
-          cp stock-report-site/public/stock-search.html dist/stock-search/index.html
-
-          # Tag Cloud page
-          cp stock-report-site/public/tag-cloud.html dist/tag-cloud/index.html
-
-          # Zi Wei Dou Shu page
-          cp stock-report-site/public/ziweidoushu.html dist/ziweidoushu/index.html
-
-          # Chinese name analysis page
-          cp stock-report-site/public/name-analysis.html dist/name-analysis/index.html
-
-          # Health triage page
-          cp stock-report-site/public/health-triage.html dist/health-triage/index.html
-          cp stock-report-site/public/data/health-rules-template.json dist/health-triage/data/health-rules-template.json
-          cp stock-report-site/public/data/health-form-config.zh-TW.json dist/health-triage/data/health-form-config.zh-TW.json
-          cp stock-report-site/public/data/health-comorb-config.zh-TW.json dist/health-triage/data/health-comorb-config.zh-TW.json
-          cp stock-report-site/public/data/health-vitals-config.zh-TW.json dist/health-triage/data/health-vitals-config.zh-TW.json
-
-          # YouTube landing page
-          cp stock-report-site/public/youtube/index.html dist/youtube/index.html
-          cp stock-report-site/public/YouTube.html dist/YouTube/index.html
-
-          # AI Studio gallery
-          cp stock-report-site/public/ai-studio/index.html dist/ai-studio/index.html
-          cp -R stock-report-site/public/ai-studio/gallery/. dist/ai-studio/gallery/
-          cp stock-report-site/public/aicrm/index.html dist/aicrm/index.html
-
-          # Prompt Builder
-          mkdir -p dist/prompt-builder
-          cp -R stock-report-site/public/prompt-builder/. dist/prompt-builder/
-          mkdir -p dist/PromptBuilder
-          cp stock-report-site/public/PromptBuilder/index.html dist/PromptBuilder/index.html
-
-          # Token Usage Dashboard
-          mkdir -p dist/token-dashboard
-          cp -R stock-report-site/public/token-dashboard/. dist/token-dashboard/
-
-          # Static assets (images, etc.)
-          if [ -d stock-report-site/public/assets ]; then
-            cp -R stock-report-site/public/assets/. dist/assets/
-          fi
-
-      - name: Deploy to openai-tw-site
+      - name: Deploy TW/US updates to openai-tw-site safely
         env:
           TARGET_REPO: mavicair2tw/openai-tw-site
           DEPLOY_KEY: ${{ secrets.OPENAI_TW_SITE_DEPLOY_KEY }}
         run: |
+          set -euo pipefail
+
           if [ -z "$DEPLOY_KEY" ]; then
             echo "OPENAI_TW_SITE_DEPLOY_KEY is not set" >&2
             exit 1
@@ -189,44 +77,27 @@ jobs:
           git config --global user.name "openai-tw bot"
           git config --global user.email "deploy@openai-tw.com"
 
-          rm -rf site-publish preserved-manual-pages
+          rm -rf site-publish
           git clone git@github.com:$TARGET_REPO.git site-publish
-          mkdir -p preserved-manual-pages
-
-          # Preserve William's manually maintained pages and safety workflow.
-          if [ -d site-publish/etf ]; then
-            mkdir -p preserved-manual-pages/etf
-            cp -R site-publish/etf/. preserved-manual-pages/etf/
-          fi
-          if [ -d site-publish/五子棋 ]; then
-            mkdir -p preserved-manual-pages/五子棋
-            cp -R site-publish/五子棋/. preserved-manual-pages/五子棋/
-          fi
-          if [ -f site-publish/.github/workflows/protect-pages.yml ]; then
-            mkdir -p preserved-manual-pages/.github/workflows
-            cp site-publish/.github/workflows/protect-pages.yml preserved-manual-pages/.github/workflows/protect-pages.yml
-          fi
-
           cd site-publish
 
-          git rm -rf . >/dev/null 2>&1 || true
-          rm -rf ./* .github
-          cp -R ../dist/. .
+          # Update only TW and US report files. Do not replace the whole site.
+          mkdir -p tw/data us/data
+          cp ../dist/tw/index.html tw/index.html
+          cp ../dist/tw/data/latest.json tw/data/latest.json
+          cp ../dist/us/index.html us/index.html
+          cp ../dist/us/data/us_latest.json us/data/us_latest.json
 
-          # Restore preserved manual pages after deploy output is copied in.
-          if [ -d ../preserved-manual-pages/etf ]; then
-            mkdir -p etf
-            cp -R ../preserved-manual-pages/etf/. etf/
-          fi
-          if [ -d ../preserved-manual-pages/五子棋 ]; then
-            mkdir -p 五子棋
-            cp -R ../preserved-manual-pages/五子棋/. 五子棋/
-          fi
-          if [ -f ../preserved-manual-pages/.github/workflows/protect-pages.yml ]; then
-            mkdir -p .github/workflows
-            cp ../preserved-manual-pages/.github/workflows/protect-pages.yml .github/workflows/protect-pages.yml
-          fi
+          # Ensure protected/manual content remains untouched.
+          test -f english/index.html
+          test -f etf/index.html
+          test -f 五子棋/index.html
+          test -f ibelieve/index.html
+          test -f srt/index.html
+          test -f mp3player/index.html
+          test -f assets/P1.mp3
+          test -f assets/P2.mp3
 
-          git add .
-          git commit -m "Deploy site $(date -u +%Y-%m-%dT%H:%M:%SZ)" || exit 0
+          git add tw/index.html tw/data/latest.json us/index.html us/data/us_latest.json
+          git commit -m "Deploy TW/US reports $(date -u +%Y-%m-%dT%H:%M:%SZ)" || exit 0
           git push origin main
