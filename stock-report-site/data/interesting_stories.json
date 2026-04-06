@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-04-06 02:29",
+  "updatedAt": "2026-04-06 09:26",
   "timezone": "Asia/Taipei",
   "storiesZh": [
+    {
+      "lang": "zh",
+      "titleZh": "《阿嬤走跳彰化》漫畫特刊上線用故事看縣政- 政府消息新聞 - PChome Online 新聞",
+      "titleEn": "",
+      "summaryZh": "《阿嬤走跳彰化》漫畫特刊上線用故事看縣政- 政府消息新聞 PChome Online 新聞",
+      "summaryEn": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQM240VXhFOHBpT3RVMWs5SFo1RFI1bFVncHVIRldTWUt2RXZYQUdHalZnN0wzQnFuYjhQRTRtb21aaFE3UklYd2RXbnAxZUpIYjNDOEJ6amlJdmMxaEc5dGwwQXJCQUEyNWpZTG1id3VjWHB1S1NuS2llYnRhYldZUmdXY196WW81NFE?oc=5"
+    },
     {
       "lang": "zh",
       "titleZh": "全台首部縣政漫畫！ 彰化以《阿嬤走跳彰化》創新展現施政成果 - funnews.tw",
@@ -20,14 +28,6 @@
     },
     {
       "lang": "zh",
-      "titleZh": "《可以幫忙洗乾淨嗎？》動畫化確定，故事療癒還有洗衣科普小知識 - 4Gamers",
-      "titleEn": "",
-      "summaryZh": "《可以幫忙洗乾淨嗎？》動畫化確定，故事療癒還有洗衣科普小知識 4Gamers",
-      "summaryEn": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYVBrbkxkQ0czZjY2Vm12TDBXMEFJRXVueVhvRmgySlRacG95dWhjOXY4V185aUJ5NTc3N09aSjNvNGdySU1TdEtMcDd4SDZtamwyUnBLMDIyOG1lajVUSHE5aC0wQzU0eVFvclVOLVBxakFWRkMzaTRJLURWbDhGRkpIZGxYNzZ4?oc=5"
-    },
-    {
-      "lang": "zh",
       "titleZh": "日常用品進化論1：原來發明筷子，不是為了吃飯！─貼身小物篇 - 國語日報社",
       "titleEn": "",
       "summaryZh": "日常用品進化論1：原來發明筷子，不是為了吃飯！─貼身小物篇 國語日報社",
@@ -36,9 +36,9 @@
     },
     {
       "lang": "zh",
-      "titleZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 - 典藏ARTouch.com",
+      "titleZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 - artouch.com",
       "titleEn": "",
-      "summaryZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 典藏ARTouch.com",
+      "summaryZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 artouch.com",
       "summaryEn": "",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE00SU8ta2NmVmZoWFJma2tYcmFHZ0tISWk1NEJtbkFJQkhlRElzOEZwTFUxSHpTanhZSXF1SGtPbXdld1lyaTM0aE9fMFFhdUhCYzdJdjU5UWxyMFNnMEc0?oc=5"
     }
@@ -47,14 +47,6 @@
     {
       "lang": "en",
       "titleZh": "",
-      "titleEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real - Cosmopolitan",
-      "summaryZh": "",
-      "summaryEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real Cosmopolitan",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNX1ZUS2xuaF9QY2pFSWJ2ZVVuZ081clJXZWdkNGU0ek54VFd0Q3BoWFRJOUUzWGF3cEozN2ZvMVd1N0FFdkRvTE4xZDIwQzdNN2VYb2Q2MExQczQ4NXdHcEhta1JPWTFBTVdQcUxpMEllaFVaYTlheE1LRjMzM0oyOVBnRkdWQnhId0E?oc=5"
-    },
-    {
-      "lang": "en",
-      "titleZh": "",
       "titleEn": "If You Dare...Here Are 21 Really, And I Mean REALLY, Creepy Real-Life Stories - BuzzFeed",
       "summaryZh": "",
       "summaryEn": "If You Dare...Here Are 21 Really, And I Mean REALLY, Creepy Real-Life Stories BuzzFeed",
@@ -63,10 +55,26 @@
     {
       "lang": "en",
       "titleZh": "",
-      "titleEn": "10 Very Real and Very Scary Ghost Stories You Have to Read to Believe - TODAY.com",
+      "titleEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real - Cosmopolitan",
       "summaryZh": "",
-      "summaryEn": "10 Very Real and Very Scary Ghost Stories You Have to Read to Believe TODAY.com",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1OeVlDY0wxX3RfdWItQnBwaS1TWkQ0OGRNYjhycjVvXzhlcGxSbmRBM1NnZm5zLW1BTFN6Y2JVOThzTEJjeHNzdExIRUYyX0p2cVI4SXl0WnA4SmhmYmJnb3U1VG40YnJmZjRn?oc=5"
+      "summaryEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real Cosmopolitan",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNX1ZUS2xuaF9QY2pFSWJ2ZVVuZ081clJXZWdkNGU0ek54VFd0Q3BoWFRJOUUzWGF3cEozN2ZvMVd1N0FFdkRvTE4xZDIwQzdNN2VYb2Q2MExQczQ4NXdHcEhta1JPWTFBTVdQcUxpMEllaFVaYTlheE1LRjMzM0oyOVBnRkdWQnhId0E?oc=5"
+    },
+    {
+      "lang": "en",
+      "titleZh": "",
+      "titleEn": "30 Best Slice-Of-Life Anime, Ranked - Comic Book Resources",
+      "summaryZh": "",
+      "summaryEn": "30 Best Slice-Of-Life Anime, Ranked Comic Book Resources",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB2MmtmRjBnX0xITmJ6b00wY29qTnNGcWxfZ2ZjaUhzTG9MUW9oeDY2SmFKUFd6MmJ4Qzk1bnkxNkFGaVF6S2FvLVptYmFxWW5MNkdHdmxHR2Z4U243X0E?oc=5"
+    },
+    {
+      "lang": "en",
+      "titleZh": "",
+      "titleEn": "The 24 best movies based on true stories - Time Out",
+      "summaryZh": "",
+      "summaryEn": "The 24 best movies based on true stories Time Out",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE12cGxWQTc0XzVjZDRDTm9rMXBFcndBc2dTMlQ0eW1MYVZtd3VLNjhmNUtwLU94eEZUcXlWOVU1TTRBTjR3Zl9nSkFmQlp4SUQ2RkM1c294dGVLVW1ycTAtdUUtMUg5d05GUDZTOUgzUQ?oc=5"
     },
     {
       "lang": "en",
@@ -75,17 +83,17 @@
       "summaryZh": "",
       "summaryEn": "Inspirational Stories: Top 10 Stories of Hope in 2025 Convoy of Hope",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wRTNPZ0xRNFBSbVN2RjFwcVNFZ045TkU3d2c3UDk1VVg1c3pvbUlGMHBVYkRFQzBvWXZVeVhNUzY3cmtkMHUxUUt6OGcyVGpjUmZ1UE9WUXRsTVJldnczUjBPYmRweWM?oc=5"
-    },
-    {
-      "lang": "en",
-      "titleZh": "",
-      "titleEn": "The Profile Dossier: Nicholas Sparks, the Master of Tragic Love Stories - The Profile",
-      "summaryZh": "",
-      "summaryEn": "The Profile Dossier: Nicholas Sparks, the Master of Tragic Love Stories The Profile",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9iamdHM21BdEk2XzZUSHZ3N3AyWTAxTkpzZER3alMtLXlnLU5XR3c3dDAwV1dWT29QeWsxZ0U1WEZNVFZQc29tNW10aUFrSHZVbzVMd3NpZzhvSGpo?oc=5"
     }
   ],
   "stories": [
+    {
+      "lang": "zh",
+      "titleZh": "《阿嬤走跳彰化》漫畫特刊上線用故事看縣政- 政府消息新聞 - PChome Online 新聞",
+      "titleEn": "",
+      "summaryZh": "《阿嬤走跳彰化》漫畫特刊上線用故事看縣政- 政府消息新聞 PChome Online 新聞",
+      "summaryEn": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQM240VXhFOHBpT3RVMWs5SFo1RFI1bFVncHVIRldTWUt2RXZYQUdHalZnN0wzQnFuYjhQRTRtb21aaFE3UklYd2RXbnAxZUpIYjNDOEJ6amlJdmMxaEc5dGwwQXJCQUEyNWpZTG1id3VjWHB1S1NuS2llYnRhYldZUmdXY196WW81NFE?oc=5"
+    },
     {
       "lang": "zh",
       "titleZh": "全台首部縣政漫畫！ 彰化以《阿嬤走跳彰化》創新展現施政成果 - funnews.tw",
@@ -104,14 +112,6 @@
     },
     {
       "lang": "zh",
-      "titleZh": "《可以幫忙洗乾淨嗎？》動畫化確定，故事療癒還有洗衣科普小知識 - 4Gamers",
-      "titleEn": "",
-      "summaryZh": "《可以幫忙洗乾淨嗎？》動畫化確定，故事療癒還有洗衣科普小知識 4Gamers",
-      "summaryEn": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYVBrbkxkQ0czZjY2Vm12TDBXMEFJRXVueVhvRmgySlRacG95dWhjOXY4V185aUJ5NTc3N09aSjNvNGdySU1TdEtMcDd4SDZtamwyUnBLMDIyOG1lajVUSHE5aC0wQzU0eVFvclVOLVBxakFWRkMzaTRJLURWbDhGRkpIZGxYNzZ4?oc=5"
-    },
-    {
-      "lang": "zh",
       "titleZh": "日常用品進化論1：原來發明筷子，不是為了吃飯！─貼身小物篇 - 國語日報社",
       "titleEn": "",
       "summaryZh": "日常用品進化論1：原來發明筷子，不是為了吃飯！─貼身小物篇 國語日報社",
@@ -120,19 +120,11 @@
     },
     {
       "lang": "zh",
-      "titleZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 - 典藏ARTouch.com",
+      "titleZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 - artouch.com",
       "titleEn": "",
-      "summaryZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 典藏ARTouch.com",
+      "summaryZh": "【專欄｜書店闆寶讀什麼】在日常生活裡搞怪的繪本選書 artouch.com",
       "summaryEn": "",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE00SU8ta2NmVmZoWFJma2tYcmFHZ0tISWk1NEJtbkFJQkhlRElzOEZwTFUxSHpTanhZSXF1SGtPbXdld1lyaTM0aE9fMFFhdUhCYzdJdjU5UWxyMFNnMEc0?oc=5"
-    },
-    {
-      "lang": "en",
-      "titleZh": "",
-      "titleEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real - Cosmopolitan",
-      "summaryZh": "",
-      "summaryEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real Cosmopolitan",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNX1ZUS2xuaF9QY2pFSWJ2ZVVuZ081clJXZWdkNGU0ek54VFd0Q3BoWFRJOUUzWGF3cEozN2ZvMVd1N0FFdkRvTE4xZDIwQzdNN2VYb2Q2MExQczQ4NXdHcEhta1JPWTFBTVdQcUxpMEllaFVaYTlheE1LRjMzM0oyOVBnRkdWQnhId0E?oc=5"
     },
     {
       "lang": "en",
@@ -145,10 +137,26 @@
     {
       "lang": "en",
       "titleZh": "",
-      "titleEn": "10 Very Real and Very Scary Ghost Stories You Have to Read to Believe - TODAY.com",
+      "titleEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real - Cosmopolitan",
       "summaryZh": "",
-      "summaryEn": "10 Very Real and Very Scary Ghost Stories You Have to Read to Believe TODAY.com",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1OeVlDY0wxX3RfdWItQnBwaS1TWkQ0OGRNYjhycjVvXzhlcGxSbmRBM1NnZm5zLW1BTFN6Y2JVOThzTEJjeHNzdExIRUYyX0p2cVI4SXl0WnA4SmhmYmJnb3U1VG40YnJmZjRn?oc=5"
+      "summaryEn": "17 horrific (and hilarious) bad date stories from real-life people that you won’t believe are real Cosmopolitan",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNX1ZUS2xuaF9QY2pFSWJ2ZVVuZ081clJXZWdkNGU0ek54VFd0Q3BoWFRJOUUzWGF3cEozN2ZvMVd1N0FFdkRvTE4xZDIwQzdNN2VYb2Q2MExQczQ4NXdHcEhta1JPWTFBTVdQcUxpMEllaFVaYTlheE1LRjMzM0oyOVBnRkdWQnhId0E?oc=5"
+    },
+    {
+      "lang": "en",
+      "titleZh": "",
+      "titleEn": "30 Best Slice-Of-Life Anime, Ranked - Comic Book Resources",
+      "summaryZh": "",
+      "summaryEn": "30 Best Slice-Of-Life Anime, Ranked Comic Book Resources",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB2MmtmRjBnX0xITmJ6b00wY29qTnNGcWxfZ2ZjaUhzTG9MUW9oeDY2SmFKUFd6MmJ4Qzk1bnkxNkFGaVF6S2FvLVptYmFxWW5MNkdHdmxHR2Z4U243X0E?oc=5"
+    },
+    {
+      "lang": "en",
+      "titleZh": "",
+      "titleEn": "The 24 best movies based on true stories - Time Out",
+      "summaryZh": "",
+      "summaryEn": "The 24 best movies based on true stories Time Out",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE12cGxWQTc0XzVjZDRDTm9rMXBFcndBc2dTMlQ0eW1MYVZtd3VLNjhmNUtwLU94eEZUcXlWOVU1TTRBTjR3Zl9nSkFmQlp4SUQ2RkM1c294dGVLVW1ycTAtdUUtMUg5d05GUDZTOUgzUQ?oc=5"
     },
     {
       "lang": "en",
@@ -157,14 +165,6 @@
       "summaryZh": "",
       "summaryEn": "Inspirational Stories: Top 10 Stories of Hope in 2025 Convoy of Hope",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wRTNPZ0xRNFBSbVN2RjFwcVNFZ045TkU3d2c3UDk1VVg1c3pvbUlGMHBVYkRFQzBvWXZVeVhNUzY3cmtkMHUxUUt6OGcyVGpjUmZ1UE9WUXRsTVJldnczUjBPYmRweWM?oc=5"
-    },
-    {
-      "lang": "en",
-      "titleZh": "",
-      "titleEn": "The Profile Dossier: Nicholas Sparks, the Master of Tragic Love Stories - The Profile",
-      "summaryZh": "",
-      "summaryEn": "The Profile Dossier: Nicholas Sparks, the Master of Tragic Love Stories The Profile",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9iamdHM21BdEk2XzZUSHZ3N3AyWTAxTkpzZER3alMtLXlnLU5XR3c3dDAwV1dWT29QeWsxZ0U1WEZNVFZQc29tNW10aUFrSHZVbzVMd3NpZzhvSGpo?oc=5"
     }
   ],
   "ok": true,
