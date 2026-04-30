@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aistudio",
+  "compatibility_date": "2026-04-30",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "star-war-game"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
