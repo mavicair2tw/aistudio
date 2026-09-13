@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13 03:51",
+  "updatedAt": "2026-09-13 10:04",
   "timezone": "Asia/Taipei",
   "storiesZh": [
     {
@@ -28,9 +28,9 @@
     },
     {
       "lang": "zh",
-      "titleZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 - PChome Online新聞",
+      "titleZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 - PChome Online 新聞",
       "titleEn": "",
-      "summaryZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 PChome Online新聞",
+      "summaryZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 PChome Online 新聞",
       "summaryEn": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaUxpdU1ydFNiZ050SWVGZXZNUTM1dm5ldlpQYjBjUjNxWjVTZW1MdjVqa1JfRC0yUk14MjB6QS1VLTlOQjZtWTFXbEI0Tk9MSWhFODBVOUhvaVFfYXNPU19vOHYyMld2MFBQTzhoMU5WaWNCUllVWHNxMDNEc2szeXdoWFE1R1pScy1uSA?oc=5"
     },
@@ -63,9 +63,9 @@
     {
       "lang": "en",
       "titleZh": "",
-      "titleEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe - netflix.com",
+      "titleEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe - Netflix",
       "summaryZh": "",
-      "summaryEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe netflix.com",
+      "summaryEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe Netflix",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1QeEFGS0RYSUlpTjhIdkxfdktWRklDMzYxbXJqUnBHU20xMmVuWVUyeHdMS01YTFpyZlJiUU0xSGgxVnVxbFR0VjBJOWZlQ3k4YkZwX1FNaWozUjFZMFBUV2E1NXFwbkpVQkRMZ3BaTF9hVndSaEE?oc=5"
     },
     {
@@ -112,9 +112,9 @@
     },
     {
       "lang": "zh",
-      "titleZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 - PChome Online新聞",
+      "titleZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 - PChome Online 新聞",
       "titleEn": "",
-      "summaryZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 PChome Online新聞",
+      "summaryZh": "新北攜手協會舉辦暑期親子安全教育活動以多元內容讓安全觀念融入日常- 生活新聞- PChome Online 新聞 PChome Online 新聞",
       "summaryEn": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaUxpdU1ydFNiZ050SWVGZXZNUTM1dm5ldlpQYjBjUjNxWjVTZW1MdjVqa1JfRC0yUk14MjB6QS1VLTlOQjZtWTFXbEI0Tk9MSWhFODBVOUhvaVFfYXNPU19vOHYyMld2MFBQTzhoMU5WaWNCUllVWHNxMDNEc2szeXdoWFE1R1pScy1uSA?oc=5"
     },
@@ -145,9 +145,9 @@
     {
       "lang": "en",
       "titleZh": "",
-      "titleEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe - netflix.com",
+      "titleEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe - Netflix",
       "summaryZh": "",
-      "summaryEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe netflix.com",
+      "summaryEn": "16 Movies Inspired by Real Events You’ll Want to See to Believe Netflix",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1QeEFGS0RYSUlpTjhIdkxfdktWRklDMzYxbXJqUnBHU20xMmVuWVUyeHdMS01YTFpyZlJiUU0xSGgxVnVxbFR0VjBJOWZlQ3k4YkZwX1FNaWozUjFZMFBUV2E1NXFwbkpVQkRMZ3BaTF9hVndSaEE?oc=5"
     },
     {
@@ -168,8 +168,5 @@
     }
   ],
   "ok": true,
-  "errors": [
-    "en:nature and ecology: HTTP Error 404: Not Found",
-    "en:leisure and entertainment: HTTP Error 404: Not Found"
-  ]
+  "errors": null
 }
