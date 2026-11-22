@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22 12:02",
+  "updatedAt": "2026-11-22 21:46",
   "timezone": "Asia/Taipei",
   "storiesZh": [
     {
@@ -169,6 +169,8 @@
   ],
   "ok": true,
   "errors": [
-    "en:leisure and entertainment: HTTP Error 429: Too Many Requests"
+    "en:education insights: HTTP Error 429: Too Many Requests",
+    "en:philosophy ideas: HTTP Error 429: Too Many Requests",
+    "en:nature and ecology: HTTP Error 429: Too Many Requests"
   ]
 }
